@@ -16,6 +16,7 @@ const enableStylelint = require('./webpack/plugins/stylelint-webpack-plugin'); /
 const processJs = require('./webpack/presets/js'); // пресет обрабатывает js-файлы
 const browserSync = require('./webpack/plugins/browser-sync-webpack-plugin'); // плагин browser sync
 const cleanWebpackPlugin = require('./webpack/plugins/clean-webpack-plugin'); // плагин очищает папку сборки перед каждой пересборкой
+const copyPlugin = require('./webpack/plugins/copy-webpack-plugin');
 
 module.exports = () => {
   const commonConfig = webpackMerge(
@@ -25,7 +26,7 @@ module.exports = () => {
     }),
     htmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/pages/index/index.html',
+      template: 'src/pages/index/index.pug',
       excludeChunks: ['blog']
     }),
     htmlWebpackPlugin({
@@ -42,7 +43,10 @@ module.exports = () => {
     processPug(),
     processJs(),
     cleanWebpackPlugin(),
-    enableStylelint()
+    enableStylelint(),
+    copyPlugin([
+      { from: 'src/favicons', to: 'favicons/' }
+    ])
   );
 
   if (process.env.mode === 'development') {
