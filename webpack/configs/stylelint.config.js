@@ -1,29 +1,30 @@
 module.exports = {
+  extends: 'stylelint-config-airbnb',
   plugins: [
     'stylelint-order'
   ],
   rules: {
     'order/properties-order': [
       {
-        'properties' : [
+        'properties': [
           'content',
           'position',
           'top',
           'right',
           'bottom',
           'left',
-          'z-index',
           'display',
+          'z-index',
           'float',
           'width',
           'height',
-          'padding',
           'margin',
+          'padding',
           'font',
-          'font-size',
           'font-family',
-          'font-style',
+          'font-size',
           'font-weight',
+          'font-style',
           'line-height',
           'color',
           'text-align',

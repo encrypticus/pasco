@@ -1,0 +1,105 @@
+/* montserrat-300 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/montserrat-v14-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Light'), local('Montserrat-Light'),
+    url('../fonts/montserrat-v14-latin-300.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/montserrat-v14-latin-300.woff2') format('woff2'),
+    url('../fonts/montserrat-v14-latin-300.woff') format('woff'),
+    url('../fonts/montserrat-v14-latin-300.ttf') format('truety    '),
+    url('../fonts/montserrat-v14-latin-300.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/montserrat-v14-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url('../fonts/montserrat-v14-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+    url('../fonts/montserrat-v14-latin-regular.woff') format('woff'),
+    url('../fonts/montserrat-v14-latin-regular.ttf') format('tr    type'),
+    url('../fonts/montserrat-v14-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/montserrat-v14-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+    url('../fonts/montserrat-v14-latin-700.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+    url('../fonts/montserrat-v14-latin-700.woff') format('woff'),
+    url('../fonts/montserrat-v14-latin-700.ttf') format('truety    '),
+    url('../fonts/montserrat-v14-latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+/* Montserrat Black */
+@font-face {
+  font-family: 'Montserrat Black';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/montserrat-black.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Black'), local('Montserrat-Black'),
+    url('../fonts/montserrat-black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/montserrat-black.woff') format('woff'),
+    url('../fonts/montserrat-black.ttf') format('truetype'),
+    url('../fonts/montserrat-black.svg#Montserrat Black') format('svg'); /* Legacy iOS */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/open-sans-v17-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+    url('../fonts/open-sans-v17-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/open-sans-v17-latin-regular.woff2') format('woff2'),
+    url('../fonts/open-sans-v17-latin-regular.woff') format('woff'),
+    url('../fonts/open-sans-v17-latin-regular.ttf') format('tru    ype'),
+    url('../fonts/open-sans-v17-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/open-sans-v17-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+    url('../fonts/open-sans-v17-latin-700.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/open-sans-v17-latin-700.woff2') format('woff2'),
+    url('../fonts/open-sans-v17-latin-700.woff') format('woff'),
+    url('../fonts/open-sans-v17-latin-700.ttf') format('truetype'),
+    url('../fonts/open-sans-v17-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: MyriadPro;
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/myriadpro-regular.eot'); /* IE9 Compat Modes */
+  src: local('MyriadPro'),
+    url('../fonts/myriadpro-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/myriadpro-regular.woff') format('woff'),
+    url('../fonts/myriadpro-regular.ttf') format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-weight: 400;
+  font-style: normal;
+  src: url('~material-icons/iconfont/MaterialIcons-Regular.eot'); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url('~material-icons/iconfont/MaterialIcons-Regular.woff2') format('woff2'),
+    url('~material-icons/iconfont/MaterialIcons-Regular.woff') format('woff'),
+    url('~material-icons/iconfont/MaterialIcons-Regular.ttf') format('truetype');
+}

@@ -57,6 +57,7 @@
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "stylelint": "^12.0.0",
+    "stylelint-config-airbnb": "0.0.0",
     "stylelint-order": "^3.1.1",
     "stylelint-scss": "^3.12.1",
     "stylelint-webpack-plugin": "^1.0.3",
@@ -67,9 +68,11 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "bootstrap": "^4.3.1",
     "hammerjs": "^2.0.8",
     "jquery": "^3.4.1",
+    "material-icons": "^0.3.1",
     "popper": "^1.0.1"
   }
 }
