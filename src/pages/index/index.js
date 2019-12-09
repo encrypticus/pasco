@@ -1,5 +1,10 @@
+import 'reset-css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'material-icons/css/material-icons.scss';
 import '../../scss/fonts.scss';
-import '../../scss/_utils.scss';
-import './index.scss';
+import '../../scss/common.scss';
+import '../../blocks/top-line/top-line';
+import '../../components/widgets/header-socials/header-socials';
+import '../../components/widgets/sign-in/sign-in';
+import '../../components/widgets/choose-language/choose-language';
+import '../../blocks/header-form/header-form';

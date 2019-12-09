@@ -1,0 +1,21 @@
+@import '../scss/utils';
+
+html {
+  font-size: 10px;
+}
+
+body {
+  max-width: 1366px;
+  min-width: 320px;
+}
+
+.wrapper {
+  height: 100%;
+  margin: auto;
+  max-width: 833px;
+
+  @include for-middle-laptop-down() {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

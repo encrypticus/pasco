@@ -1,7 +1,1 @@
 @import '../../scss/utils';
-
-body {
-  @include for-tablet-landscape-down {
-    background-color: red;
-  }
-}

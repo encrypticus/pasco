@@ -1,0 +1,34 @@
+@import '../../scss/utils';
+
+.header-form {
+  display: flex;
+
+  @include for-phone-only {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__hr {
+    width: 1px;
+    background-color: #545454;
+    margin-left: 5px;
+    margin-right: 5px;
+    order: 1;
+
+    @include for-phone-only {
+      display: none;
+    }
+  }
+
+  &__sign-in {
+    order: 1;
+  }
+
+  &__language {
+    order: 1;
+
+    @include for-phone-only {
+      order: 0;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../scss/utils';
+
+.top-line {
+  height: 29px;
+  background-color: #191919;
+
+  @include for-phone-only {
+    height: 40px;
+    background-color: #303f9f;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__socials {
+    @include for-phone-only {
+      display: none;
+    }
+  }
+}
