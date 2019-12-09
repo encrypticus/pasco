@@ -8,3 +8,4 @@ import '../../components/widgets/header-socials/header-socials';
 import '../../components/widgets/sign-in/sign-in';
 import '../../components/widgets/choose-language/choose-language';
 import '../../blocks/header-form/header-form';
+import '../../components/logo/logo';
