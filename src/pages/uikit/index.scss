@@ -1,5 +1,7 @@
 @import '../../scss/utils';
 
+@import '../../scss/variables';
+
 .uikit {
 
   &__inspiration {
@@ -31,6 +33,7 @@
   &__widgets {
     display: grid;
     box-sizing: border-box;
+    margin-bottom: 60px;
     padding: 20px;
     background-color: #212121;
     opacity: .87;
@@ -70,5 +73,13 @@
     &_col6 {
       grid-area: col6;
     }
+  }
+
+  &__sort-blog {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: $color-secondary;
   }
 }

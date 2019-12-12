@@ -1,0 +1,23 @@
+//- Все примеси в этом файле должны начинаться c имени блока (sort-blog)
+
+mixin sort-blog(selectedID = '1')
+  include sort-blog.data.pug
+
+  .sort-blog&attributes(attributes)
+    h5.sort-blog__title sort blog:
+    ul.sort-blog__list
+      each sortItem in sortBlog
+        +sort-blog-item(selectedID, sortItem)
+
+mixin sort-blog-item(selectedID, item)
+  -
+    var thisItemClass = 'sort-blog__item';
+    var thisButtonClass = 'sort-blog__button';
+    if (selectedID === item.id) {
+      thisItemClass += ' sort-blog__item_active';
+    }
+
+  li(class = thisItemClass)
+    button(class = thisButtonClass)= item.name
+
+    

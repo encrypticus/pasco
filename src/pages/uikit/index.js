@@ -20,3 +20,4 @@ import '../../components/heading/heading';
 import '../../components/btn/btn';
 import '../../components/user/user';
 import '../../components/widgets/comments/comments';
+import '../../components/sort-blog/sort-blog';

@@ -1,0 +1,64 @@
+// В этом файле должны быть стили для БЭМ-блока sort-blog, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+@import '../../scss/variables';
+
+@import '../../scss/utils';
+
+.sort-blog {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    color: $color-primary;
+    opacity: .87;
+    font-variant: small-caps;
+    letter-spacing: .8px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 16px;
+
+    @include for-tablet-landscape-down {
+      margin-left: 0;
+    }
+  }
+
+  &__item {
+    margin-left: 15px;
+
+    @include for-tablet-landscape-down {
+      margin-top: 15px;
+    }
+  }
+
+  &__item:nth-child(1) {
+    margin-left: 0;
+  }
+
+  &__button {
+    padding: 5px 28px 5px;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-primary;
+    background-color: #f5f5f5;
+    border: 0;
+    border-radius: 15px;
+    opacity: .87;
+    font-variant: small-caps;
+    letter-spacing: .8px;
+  }
+}
