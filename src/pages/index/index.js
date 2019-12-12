@@ -16,3 +16,5 @@ import '../../components/main-nav/main-nav';
 import '../../components/widgets/header-search/header-search';
 import '../../components/hamburger/hamburger';
 import '../../components/mmenu/mmenu';
+import '../../components/inspiration/inspiration';
+import '../../components/heading/heading';
