@@ -1,0 +1,48 @@
+@import '../../scss/variables';
+
+.user {
+  display: inline-block;
+  font-family: Montserrat, Arial, sans-serif;
+  text-align: center;
+
+  &_color_dark {
+
+    .user__name,
+    .user__date {
+      color: $color-primary;
+    }
+  }
+
+  &_float {
+    text-align: left;
+
+    .user__avatar {
+      float: left;
+      clear: both;
+      margin-right: 10px;
+    }
+  }
+
+  &__avatar {
+    display: block;
+    margin: auto;
+    margin-bottom: 12px;
+  }
+
+  &__name {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $color-secondary;
+    letter-spacing: .7px;
+  }
+
+  &__date {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 27px;
+    color: $color-secondary;
+    opacity: .54;
+    letter-spacing: .6px;
+  }
+}

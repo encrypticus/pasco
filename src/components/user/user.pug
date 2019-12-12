@@ -1,0 +1,24 @@
+mixin user(avatar, name, date, mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' user_' + modsList[i].trim();
+      }
+    }
+
+  .user(class = allMods)
+    +user-avatar(avatar)
+    +user-name(name)
+    +user-date(date)
+
+mixin user-avatar(url)
+  img.user__avatar(src = url, alt = 'user', width = '50', height = '50')
+
+mixin user-name(username)
+  h5.user__name= username
+
+mixin user-date(userdate)
+  time.user__date= userdate

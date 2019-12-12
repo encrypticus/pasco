@@ -13,9 +13,25 @@ block content
       include ../../blocks/top-line/top-line
       +header('1', 'uikit')
       main.content.uikit
+
         .uikit__inspiration
           +inspiration('buttons', 'color_dark')
         .uikit__buttons
           +btn('subscribe', 'type_rect, theme_blue')(href='#')
           +btn('read more', 'type_ellipse, theme_blue')(href='#')
           +btn('subscribe', 'type_rect, theme_dark')(href='#')
+
+        .uikit__inspiration
+          +inspiration('user', 'color_dark')
+        .uikit__user
+          +user('../../components/user/img/user1.png', 'Henry Little', 'April 28, 2016   10:15', 'color_dark')
+          +user('../../components/user/img/user2.png', 'Henry Little', 'April 28, 2016   10:15', 'color_dark')
+          +user('../../components/user/img/user3.png', 'James Leman', 'April 28, 2016', 'color_dark')
+          +user('../../components/user/img/user4.png', 'James Leman', 'April 28, 2016', 'color_dark')
+          +user('../../components/user/img/user2.png', 'Benjamin Miller', 'April 28, 2016', 'color_dark')
+
+        .uikit__user.uikit__user_float
+          +user('../../components/user/img/user1.png', 'Henry Little', 'April 28, 2016   10:15', 'color_dark, float')
+          +user('../../components/user/img/user2.png', 'Henry Little', 'April 28, 2016   10:15', 'color_dark, float')
+          +user('../../components/user/img/user3.png', 'James Leman', 'April 28, 2016', 'color_dark, float')
+          +user('../../components/user/img/user4.png', 'James Leman', 'April 28, 2016', 'color_dark, float')
