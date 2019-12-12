@@ -1,0 +1,27 @@
+//- Все примеси в этом файле должны начинаться c имени блока (comments)
+
+mixin comments(text, type, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +comments('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' comments_' + modsList[i].trim();
+      }
+    }
+
+  span.comments(class=allMods)&attributes(attributes)
+    if (type === 'forum')
+      i.mi.mi-forum.comments__icon
+    else if (type === 'favorite')
+      i.mi.mi-favorite-border.comments__icon
+    span.comments__text=text
+    

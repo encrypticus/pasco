@@ -19,3 +19,4 @@ import '../../components/inspiration/inspiration';
 import '../../components/heading/heading';
 import '../../components/btn/btn';
 import '../../components/user/user';
+import '../../components/widgets/comments/comments';
