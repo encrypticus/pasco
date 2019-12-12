@@ -39,5 +39,15 @@ block content
         .uikit__inspiration
           +inspiration('widgets', 'color_dark')
         .uikit__widgets
-          +comments('Comments (28)', 'forum', 'color_dark')
-          +comments('Likes (07)', 'favorite', 'color_dark')
+          .uikit__widgets_col1
+            +comments('Comments (28)', 'forum')
+          .uikit__widgets_col2
+            +comments('Likes (07)', 'favorite')
+          .uikit__widgets_col3
+            +sign-in
+          .uikit__widgets_col4
+            +choose-language
+          .uikit__widgets_col5
+            +header-socials
+          .uikit__widgets_col6
+            +header-search
