@@ -1,10 +1,22 @@
+@import '../../scss/utils';
+
 .logo {
   font-family: Montserrat, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 25.61px;
+  line-height: 36px;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 1.62px;
+  letter-spacing: 1.92px;
   text-decoration: none;
+  transition: background-color .3s;
+  cursor: pointer;
+
+  @include for-phone-only {
+    margin-left: 20px;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, .2);
+  }
 }

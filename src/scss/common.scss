@@ -10,12 +10,26 @@ body {
 }
 
 .wrapper {
-  height: 100%;
+  width: 100%;
   margin: auto;
-  max-width: 833px;
+  max-width: 1170px;
+  box-sizing: border-box;
 
-  @include for-middle-laptop-down() {
+  @include for-desktop-down {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  &_flex {
+    display: flex;
+    align-items: center;
+
+    @include for-desktop-down {
+      justify-content: space-between;
+    }
+
+    @include for-phone-landscape-down {
+      padding-right: 35px;
+    }
   }
 }

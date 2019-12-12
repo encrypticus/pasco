@@ -1,10 +1,10 @@
 @import '../../../scss/utils';
 
 .choose-language {
-  padding-left: 17px;
+  padding-left: 23px;
   padding-right: 11px;
   font-family: Montserrat, Arial, sans-serif;
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 19.21px;
   color: #fff;
@@ -39,9 +39,11 @@
 
 .choose-language-wrapper {
   position: relative;
+  display: flex;
   font-family: 'Material Icons', Arial, sans-serif;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 400;
+  line-height: 18px;
   color: #fff;
   cursor: pointer;
 
@@ -65,10 +67,10 @@
   &::after {
     content: '\e313';
     position: absolute;
-    top: 3px;
-    right: 6px;
-    width: 8px;
-    height: 6px;
+    top: 1px;
+    right: 2px;
+    width: 10px;
+    height: 7px;
     opacity: .38;
 
     @include for-phone-only {

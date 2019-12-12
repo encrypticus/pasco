@@ -17,6 +17,7 @@ const processJs = require('./webpack/presets/js'); // пресет обраба�
 const browserSync = require('./webpack/plugins/browser-sync-webpack-plugin'); // плагин browser sync
 const cleanWebpackPlugin = require('./webpack/plugins/clean-webpack-plugin'); // плагин очищает папку сборки перед каждой пересборкой
 const copyPlugin = require('./webpack/plugins/copy-webpack-plugin');
+const jquery = require('./webpack/plugins/jquery'); // плагин, добавляющий jquery в проект
 
 module.exports = () => {
   const commonConfig = webpackMerge(
@@ -46,7 +47,8 @@ module.exports = () => {
     enableStylelint(),
     copyPlugin([
       { from: 'src/favicons', to: 'favicons/' }
-    ])
+    ]),
+    jquery()
   );
 
   if (process.env.mode === 'development') {
