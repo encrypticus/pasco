@@ -1,2 +1,12 @@
-mixin inspiration()
-  h4.inspiration inspiration
+mixin inspiration(text = 'inspiration', mods)
+  -
+    // список модификаторов
+      var allMods = '';
+      if(typeof(mods) !== 'undefined' && mods) {
+        var modsList = mods.split(',');
+        for (var i = 0; i < modsList.length; i++) {
+          allMods = allMods + ' inspiration_' + modsList[i].trim();
+        }
+      }
+
+  h4.inspiration(class=allMods)= text

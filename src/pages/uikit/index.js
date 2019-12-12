@@ -3,6 +3,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'material-icons/css/material-icons.scss';
 import '../../scss/fonts.scss';
 import '../../scss/common.scss';
+import './index.scss';
 import '../../blocks/top-line/top-line';
 import '../../components/widgets/header-socials/header-socials';
 import '../../components/widgets/sign-in/sign-in';

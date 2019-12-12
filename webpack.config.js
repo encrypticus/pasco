@@ -23,16 +23,16 @@ module.exports = () => {
   const commonConfig = webpackMerge(
     setEntry({
       index: './src/pages/index/index.js',
-      blog: './src/pages/blog/index.js'
+      uikit: './src/pages/uikit/index.js'
     }),
     htmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/pages/index/index.pug',
-      excludeChunks: ['blog']
+      excludeChunks: ['uikit']
     }),
     htmlWebpackPlugin({
-      filename: 'blog.html',
-      template: 'src/pages/blog/index.html',
+      filename: 'uikit.html',
+      template: 'src/pages/uikit/index.pug',
       excludeChunks: ['index']
     }),
     setOutput(),

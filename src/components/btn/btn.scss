@@ -1,0 +1,137 @@
+@import '../../scss/variables';
+
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: inherit;
+  color: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  user-select: none;
+  text-decoration: none;
+  text-transform: none;
+  background-image: none;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    //color: $text-color;
+    //background-color: darken($gray-lightest, 10%);
+    // border-color: darken($gray-lighter, 12%);
+  }
+
+  // &:visited {
+  //   color: $text-color;
+  // }
+
+  &:active,
+  &:focus {
+    //@include field-focus;
+  }
+
+  &_disabled,
+  &:disabled {
+    //opacity: $opacity;
+    cursor: not-allowed;
+    //color: $text-color;
+    //background-color: $gray-lightest;
+    // border-color: $gray-lighter;
+
+    @at-root a.btn_disabled {
+      pointer-events: none;
+    }
+  }
+
+  // &__icon {
+  //   display: inline-block;
+  //   vertical-align: middle;
+  // }
+
+
+
+  // &--main {
+  //   color: #fff;
+  //   background-color: $color-main;
+  //   // border: 1px solid $color-main;
+
+  //   &:hover,
+  //   &:focus {
+  //     color: #fff;
+  //     background-color: darken($color-main, 10%);
+  //     // border-color: darken($color-main, 12%);
+  //   }
+
+  //   &--disabled,
+  //   &:disabled {
+  //     color: #fff;
+  //     background-color: $color-main;
+  //     // border-color: $color-main;
+  //   }
+  // }
+
+  &_type_ellipse,
+  &_type_rect {
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: $color-secondary;
+    font-variant: small-caps;
+  }
+
+  &_type_ellipse {
+    padding: 4px 27px;
+    border-radius: 40px;
+    box-shadow: 0 17px 24px rgba(48, 63, 159, .2);
+    letter-spacing: .7px;
+  }
+
+  &_type_rect {
+    padding: 4px 89px;
+    font-size: 23px;
+    border-radius: 4px;
+    letter-spacing: 0;
+  }
+
+  &_theme_blue {
+    background-color: $color-button;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: lighten($color-button, 5%);
+    }
+
+    &:active {
+      background-color: darken($color-button, 5%);
+    }
+  }
+
+  &_theme_dark {
+    padding: 4px 96px;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: .7px;
+    background-color: $color-button-dark;
+    transition: background-color, .3s;
+
+    &:hover {
+      background-color: lighten($color-button-dark, 5%);
+    }
+
+    &:active {
+      background-color: darken($color-button-dark, 5%);
+    }
+  }
+}
