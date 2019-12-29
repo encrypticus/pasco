@@ -1,6 +1,6 @@
 // Объект настроек по умолчанию
 const defaultOptions = {
-  attrs: ['img:src', 'video:poster', 'video:src']
+  attrs: ['img:src', 'video:poster', 'source:src']
 };
 
 /**

@@ -75,6 +75,7 @@
     "jquery": "^3.4.1",
     "material-icons": "^0.3.1",
     "mmenu-js": "^8.4.3",
+    "plyr": "^3.5.6",
     "popper": "^1.0.1",
     "reset-css": "^5.0.1"
   }

@@ -79,7 +79,26 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     padding: 20px;
     background-color: $color-secondary;
+    margin-bottom: 60px;
+  }
+
+  &__video {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 820px 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+
+    @media (max-width: 1366px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include for-tablet-landscape-down {
+      grid-template-columns: 1fr;
+    }
   }
 }

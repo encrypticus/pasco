@@ -4,7 +4,7 @@ const pugHtmlLoader = require('../loaders/pug-html-loader');
 // Объект настроек по умолчанию
 const defaultOptions = {
   htmlLoader: {
-    attrs: ['img:src', 'video:poster', 'video:src']
+    attrs: ['img:src', 'video:poster', 'source:src']
   },
   pugHtmlLoader: {
     pretty: process.env.mode === 'development'

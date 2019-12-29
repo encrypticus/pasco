@@ -5,7 +5,7 @@ append style
   include ../../pug/favicons
 
 block title
-  title Pasco Home
+  title Pasco uikit
 
 block content
   body
@@ -56,3 +56,31 @@ block content
           +inspiration('sort blog', 'color_dark')
         .uikit__sort-blog
           +sort-blog
+
+        .uikit__inspiration
+          +inspiration('video', 'color_dark')
+        .uikit__video
+          +video({
+            poster: '../../components/video/img/poster-big.jpg',
+            src: '../../components/video/video/nature.mp4',
+            type: 'video/mp4',
+            caption: 'lifestyle',
+            comments: 7,
+            likes: 15
+          })
+          +video({
+            poster: '../../components/video/img/woman-hat.jpg',
+            src: '../../components/video/video/nature.mp4',
+            type: 'video/mp4',
+            caption: 'inspiration',
+            comments: 7,
+            likes: 15
+          }, 'size_sm')
+          +video({
+            poster: '../../components/video/img/grape.jpg',
+            src: '../../components/video/video/nature.mp4',
+            type: 'video/mp4',
+            caption: 'inspiration',
+            comments: 7,
+            likes: 15
+          }, 'size_sm')

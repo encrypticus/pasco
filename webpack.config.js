@@ -6,7 +6,8 @@ const setOutput = require('./webpack/options/output'); // опция устан�
 const htmlWebpackPlugin = require('./webpack/plugins/html-webpack-plugin'); // плагин генерирует html-файл в папке сборки
 const processCss = require('./webpack/presets/css'); // пресет обрабатывает css-файлы
 const processSassScss = require('./webpack/presets/sass-scss'); // пресет обрабатывает sass/scss-файлы
-const processImages = require('./webpack/presets/img'); // пресет обрабатывет изображения
+const processImages = require('./webpack/presets/img'); // пресет обрабатывает изображения
+const processVideo = require('./webpack/presets/video'); // пресет обрабатывает видеофайлы
 const processFonts = require('./webpack/presets/font'); // пресет обрабатывает шрифты
 const processPug = require('./webpack/presets/pug'); // пресет обрабатывает pug-файлы
 const miniCssExtractPlugin = require('./webpack/plugins/mini-css-extract-plugin'); // модуль обрабатывает css-файлы
@@ -41,6 +42,7 @@ module.exports = () => {
     processSassScss(),
     processImages(),
     processFonts(),
+    processVideo(),
     processPug(),
     processJs(),
     cleanWebpackPlugin(),

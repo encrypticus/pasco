@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (video)
+
+mixin video(options = {}, mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + 'video_' + modsList[i].trim();
+      }
+    }
+
+  .video(class= allMods)&attributes(attributes)
+    video.video__player(poster= options.poster)
+      source(src= options.src, type= options.type)
+    .video__info-panel
+      +caption(options.caption)
+      .video__comments
+        +comments(options.comments, 'forum')
+      .video__likes
+        +comments(options.likes, 'favorite')
