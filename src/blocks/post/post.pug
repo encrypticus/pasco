@@ -1,0 +1,26 @@
+mixin post(options = {}, mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' post_' + modsList[i].trim();
+      }
+    }
+
+  .post(class=allMods)&attributes(attributes)
+    block
+
+mixin post-content(title, text)
+  .post__content
+    h3.post__title= title
+    p.post__text= text
+
+mixin post-autor()
+  .post__autor
+    block
+
+mixin post-button()
+  button.post__button
+    span.mi.mi-more-vert

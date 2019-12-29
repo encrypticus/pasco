@@ -23,3 +23,4 @@ import '../../components/widgets/comments/comments';
 import '../../components/sort-blog/sort-blog';
 import '../../components/video/video';
 import '../../components/caption/caption';
+import '../../blocks/post/post';

@@ -84,3 +84,22 @@ block content
             comments: 7,
             likes: 15
           }, 'size_sm')
+
+        .uikit__inspiration
+          +inspiration('Post', 'color_dark')
+        .uikit__posts
+            +post
+              +video({
+                poster: '../../components/video/img/poster-big.jpg',
+                src: '../../components/video/video/nature.mp4',
+                type: 'video/mp4',
+                caption: 'lifestyle',
+                comments: 7,
+                likes: 15
+              })
+              - var title = '10 Things To Do To Change Your Life Forever';
+              - var text = 'The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.';
+              +post-content(title, text)
+              +post-autor
+                +user('../../components/user/img/user2.png', 'Henry Little', 'April 28, 2016   10:15', 'color_dark, float')
+                +post-button

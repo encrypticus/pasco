@@ -1,7 +1,7 @@
 @import '../../scss/variables';
 
 .user {
-  display: inline-block;
+  //display: inline-block;
   font-family: Montserrat, Arial, sans-serif;
   text-align: center;
 
@@ -20,6 +20,7 @@
       float: left;
       clear: both;
       margin-right: 10px;
+      margin-bottom: 0;
     }
   }
 
