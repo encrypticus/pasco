@@ -86,7 +86,35 @@ block content
           }, 'size_sm')
 
         .uikit__inspiration
-          +inspiration('Post', 'color_dark')
+          +inspiration('image blocks', 'color_dark')
+        .uikit__image-blocks
+          +image-block({
+            src: '../../components/image-block/img/board.jpg',
+            caption: 'inspiration',
+            comments: 23,
+            likes: 10
+          })
+          +image-block({
+            src: '../../components/image-block/img/ocean.jpg',
+            caption: 'trip',
+            comments: 5,
+            likes: 34
+          })
+          +image-block({
+            src: '../../components/image-block/img/woman.jpg',
+            caption: 'lifestyle',
+            comments: 23,
+            likes: 32
+          })
+          +image-block({
+            src: '../../components/image-block/img/black-boy.jpg',
+            caption: 'hollywood',
+            comments: 7,
+            likes: 15
+          })
+
+        .uikit__inspiration
+          +inspiration('post', 'color_dark')
         .uikit__posts
             +post
               +video({

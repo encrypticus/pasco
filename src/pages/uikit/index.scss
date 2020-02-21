@@ -103,6 +103,24 @@
     }
   }
 
+  &__image-blocks {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+    @include for-desktop-down {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include for-phone-landscape-down {
+      grid-template-columns: 1fr;
+    }
+  }
+
   &__posts {
     display: grid;
     margin: auto;
