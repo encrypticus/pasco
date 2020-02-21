@@ -1,7 +1,7 @@
 {
-  "name": "webpack-starter-kit",
+  "name": "pasco",
   "version": "1.0.0",
-  "description": "Стартовый репозиторий для frontend-разработки c webpack на борту",
+  "description": "Адаптивная, компонентная pixel-perfect верстка коллективного блога с мобильной версией на основе psd-макета",
   "main": "index.js",
   "scripts": {
     "browser-sync": "cross-env mode=development webpack --mode development --watch",
@@ -11,21 +11,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/encrypticus/webpack-starter-kit.git"
+    "url": "git+https://github.com/encrypticus/pasco.git"
   },
   "keywords": [
-    "webpack",
-    "webpack boilerplate",
-    "webpack starter kit",
-    "frontend starter kit",
-    "frontend boilerplate"
+    "frontend"
   ],
   "author": "Alexander Timofeev aka encrypticus",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/encrypticus/webpack-starter-kit/issues"
+    "url": "https://github.com/encrypticus/pasco/issues"
   },
-  "homepage": "https://github.com/encrypticus/webpack-starter-kit#readme",
+  "homepage": "https://github.com/encrypticus/pasco#readme",
   "browserslist": [
     "defaults"
   ],
