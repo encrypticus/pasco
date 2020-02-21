@@ -1,0 +1,23 @@
+.image-block {
+
+  $block-name: &; // #{$block-name}__element
+
+  position: relative;
+  max-width: 260px;
+
+  &__info-panel {
+    position: absolute;
+    right: 20px;
+    bottom: 9px;
+    left: 20px;
+    display: flex;
+  }
+
+  &__comments {
+    margin-left: auto;
+  }
+
+  &__likes {
+    margin-left: 25px;
+  }
+}

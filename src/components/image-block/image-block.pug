@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (image-block)
+
+mixin image-block(options = {}, mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' image-block_' + modsList[i].trim();
+      }
+    }
+
+  .image-block(class=allMods)&attributes(attributes)
+    img.image-block__img(src= options.src, alt= 'post image')
+    .image-block__info-panel
+      +caption(options.caption)
+      .image-block__comments
+        +comments(options.comments, 'forum')
+      .image-block__likes
+        +comments(options.likes, 'favorite')
+    
