@@ -8,6 +8,13 @@
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .12);
+  overflow: hidden;
+
+  &_size_sm {
+    @include for-tablet-landscape-down {
+      max-width: 260px;
+    }
+  }
 
   &__content {
     box-sizing: border-box;
@@ -15,6 +22,19 @@
     padding-bottom: 15px;
     color: rgba(0, 0, 0, .87);
     border-bottom: 1px solid rgba(0, 0, 0, .12);
+  }
+
+  &_size_sm {
+
+    #{$block-name}__content {
+      padding-top: 7px;
+      padding-left: 280px;
+      padding-bottom: 10px;
+
+      @include for-tablet-landscape-down {
+        padding-left: 20px;
+      }
+    }
   }
 
   &__title {
@@ -26,6 +46,13 @@
     letter-spacing: .5px;
   }
 
+  &_size_sm {
+
+    #{$block-name}__title {
+      font-size: 16px;
+    }
+  }
+
   &__text {
     font-family: OpenSans, Arial, sans-serif;
     font-size: 16px;
@@ -35,11 +62,29 @@
     letter-spacing: .94px;
   }
 
+  &_size_sm {
+
+    #{$block-name}__text {
+      font-size: 14px;
+    }
+  }
+
   &__autor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     padding: 20px;
+
+    @include for-tablet-landscape-down {
+      grid-template-columns: 1fr 4px;
+    }
+  }
+
+  &_size_sm {
+
+    #{$block-name}__autor {
+      padding: 10px 20px;
+    }
   }
 
   &__button {
@@ -55,5 +100,14 @@
     letter-spacing: 1.2px;
     cursor: pointer;
     justify-self: right;
+  }
+
+  &__left {
+    float: left;
+    clear: both;
+
+    @include for-tablet-landscape-down {
+      float: none;
+    }
   }
 }
