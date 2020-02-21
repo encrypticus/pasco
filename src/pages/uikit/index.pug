@@ -103,3 +103,19 @@ block content
               +post-autor
                 +user('../../components/user/img/user2.png', 'Henry Little', 'April 28, 2016   10:15', 'color_dark, float')
                 +post-button
+
+            +post
+              +video({
+                poster: '../../components/video/img/woman-hat.jpg',
+                src: '../../components/video/video/nature.mp4',
+                type: 'video/mp4',
+                caption: 'inspiration',
+                comments: 7,
+                likes: 15
+              }, 'size_sm')
+              - var title = '4 Natural Ways To Have Young Skin';
+              - var text = 'Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar.'
+              +post-content(title, text)
+              +post-autor
+                +user('../../components/user/img/user2.png', 'Henry Little', 'April 28, 2016   10:15', 'color_dark, float')
+                +post-button
