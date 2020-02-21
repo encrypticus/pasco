@@ -1,4 +1,4 @@
-mixin post(options = {}, mods)
+mixin post(mods)
   -
     // список модификаторов
     var allMods = '';
@@ -24,3 +24,7 @@ mixin post-autor()
 mixin post-button()
   button.post__button
     span.mi.mi-more-vert
+
+mixin post-left()
+  .post__left
+    block
