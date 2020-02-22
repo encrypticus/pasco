@@ -10,7 +10,7 @@
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .12);
   overflow: hidden;
 
-  &_size_sm {
+  &_size_md {
     @include for-tablet-landscape-down {
       max-width: 260px;
     }
@@ -24,7 +24,7 @@
     border-bottom: 1px solid rgba(0, 0, 0, .12);
   }
 
-  &_size_sm {
+  &_size_md {
 
     #{$block-name}__content {
       padding-top: 7px;
@@ -46,7 +46,7 @@
     letter-spacing: .5px;
   }
 
-  &_size_sm {
+  &_size_md {
 
     #{$block-name}__title {
       font-size: 16px;
@@ -62,7 +62,7 @@
     letter-spacing: .94px;
   }
 
-  &_size_sm {
+  &_size_md {
 
     #{$block-name}__text {
       font-size: 14px;
@@ -80,7 +80,7 @@
     }
   }
 
-  &_size_sm {
+  &_size_md {
 
     #{$block-name}__autor {
       padding: 10px 20px;
