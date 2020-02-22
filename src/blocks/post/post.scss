@@ -16,6 +16,22 @@
     }
   }
 
+  &_type_vertical_sm {
+    max-width: 260px;
+
+    #{$block-name}__title {
+      font-size: 14px;
+    }
+
+    #{$block-name}__text {
+      font-size: 14px;
+    }
+
+    #{$block-name}__autor {
+      grid-template-columns: 1fr 4px;
+    }
+  }
+
   &__content {
     box-sizing: border-box;
     padding: 13px 20px 20px 20px;
