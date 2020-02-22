@@ -32,6 +32,14 @@
     }
   }
 
+  &_type_vertical_lg {
+    max-width: 400px;
+
+    #{$block-name}__autor {
+      grid-template-columns: 1fr 4px;
+    }
+  }
+
   &__content {
     box-sizing: border-box;
     padding: 13px 20px 20px 20px;
@@ -60,6 +68,10 @@
     line-height: 1.61;
     opacity: .87;
     letter-spacing: .5px;
+
+    @include for-phone-only {
+      font-size: 14px;
+    }
   }
 
   &_size_md {
@@ -76,6 +88,10 @@
     opacity: .87;
     max-width: 765px;
     letter-spacing: .94px;
+
+    @include for-phone-only {
+      font-size: 14px;
+    }
   }
 
   &_size_md {
