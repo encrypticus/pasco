@@ -223,12 +223,25 @@ block content
                   +post-button
 
               +post('type_vertical_sm')
-                +image-block({
-                  src: '../../components/image-block/img/black-boy.jpg',
-                  caption: 'trip',
-                  comments: 3,
-                  likes: 15
-                })
+                +slick-carousel
+                  +image-block({
+                    src: '../../components/image-block/img/black-boy.jpg',
+                    caption: 'hollywood',
+                    comments: 7,
+                    likes: 15
+                  })
+                  +image-block({
+                    src: '../../components/image-block/img/ocean.jpg',
+                    caption: 'hollywood',
+                    comments: 7,
+                    likes: 15
+                  })
+                  +image-block({
+                    src: '../../components/image-block/img/woman.jpg',
+                    caption: 'hollywood',
+                    comments: 7,
+                    likes: 15
+                  })
                 - var title = '5 Useful Tips for Novice Painters';
                 - var text = 'Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar.'
                 +post-content(title, text)
