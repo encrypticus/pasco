@@ -130,4 +130,17 @@
     align-items: center;
     margin-bottom: 60px;
   }
+
+  &__post-group {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    margin-bottom: 60px;
+
+    @include for-tablet-landscape-down {
+      grid-template-columns: 1fr;
+    }
+  }
 }
