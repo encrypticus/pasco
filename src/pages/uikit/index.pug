@@ -190,3 +190,48 @@ block content
               +post-autor
                 +user('../../components/user/img/user2.png', 'Benjamin Miller', 'April 28, 2016', 'color_dark, float')
                 +post-button
+
+            .uikit__post-group
+              +post('type_vertical_sm')
+                +video({
+                  poster: '../../components/video/img/grape.jpg',
+                  src: '../../components/video/video/nature.mp4',
+                  type: 'video/mp4',
+                  caption: 'inspiration',
+                  comments: 7,
+                  likes: 15
+                }, 'size_sm')
+                - var title = 'WFood That Actually Taste Better When You Freeze ';
+                - var text = 'Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar.'
+                +post-content(title, text)
+                +post-autor
+                  +user('../../components/user/img/user3.png', 'James Leman', 'April 28, 2016', 'color_dark, float')
+                  +post-button
+
+              +post('type_vertical_sm')
+                +image-block({
+                  src: '../../components/image-block/img/woman.jpg',
+                  caption: 'trip',
+                  comments: 3,
+                  likes: 15
+                })
+                - var title = 'Why It’s Amazing To Date People Who Love Traveling';
+                - var text = 'Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar.'
+                +post-content(title, text)
+                +post-autor
+                  +user('../../components/user/img/user4.png', 'Benjamin Miller', 'April 28, 2016', 'color_dark, float')
+                  +post-button
+
+              +post('type_vertical_sm')
+                +image-block({
+                  src: '../../components/image-block/img/black-boy.jpg',
+                  caption: 'trip',
+                  comments: 3,
+                  likes: 15
+                })
+                - var title = '5 Useful Tips for Novice Painters';
+                - var text = 'Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar.'
+                +post-content(title, text)
+                +post-autor
+                  +user('../../components/user/img/user2.png', 'Henry Little', 'April 28, 2016', 'color_dark, float')
+                  +post-button
