@@ -143,4 +143,12 @@
       grid-template-columns: 1fr;
     }
   }
+
+  &__post-group_lg {
+    grid-template-columns: repeat(2, 1fr);
+
+    @include for-tablet-landscape-down {
+      grid-template-columns: 1fr;
+    }
+  }
 }
