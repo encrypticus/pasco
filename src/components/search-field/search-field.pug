@@ -1,0 +1,16 @@
+mixin search-field(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' search-field_' + modsList[i].trim();
+      }
+    }
+
+  .search-field(class=allMods)&attributes(attributes)
+    input.search-field__input(type="text", name="search", placeholder="Search")
+    button.search-field__btn
+      span.search-field__icon.mi.mi-search
+    
