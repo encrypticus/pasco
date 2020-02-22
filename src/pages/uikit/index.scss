@@ -151,10 +151,17 @@
     }
   }
 
-  &__carousel {
+  &__carousel,
+  &__search-field {
     display: grid;
     margin: auto;
     grid-template-columns: 1fr;
     justify-items: center;
+    margin-bottom: 60px;
+  }
+
+  &__search-field {
+    padding: 60px 0;
+    background-color: #fff;
   }
 }
