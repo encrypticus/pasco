@@ -25,3 +25,4 @@ import '../../components/video/video';
 import '../../components/caption/caption';
 import '../../blocks/post/post';
 import '../../components/image-block/image-block';
+import '../../components/slick-carousel/slick-carousel';

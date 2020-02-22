@@ -1,0 +1,15 @@
+//- Все примеси в этом файле должны начинаться c имени блока (slick-carousel)
+
+mixin slick-carousel(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' slick-carousel_' + modsList[i].trim();
+      }
+    }
+
+  .slick-carousel(class=allMods)&attributes(attributes)
+    block

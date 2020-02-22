@@ -150,4 +150,11 @@
       grid-template-columns: 1fr;
     }
   }
+
+  &__carousel {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
