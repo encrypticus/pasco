@@ -1,0 +1,13 @@
+.title {
+
+  $block-name: &; // #{$block-name}__element
+
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+
+  &_color_blue {
+    color: #3f51b5;
+  }
+}

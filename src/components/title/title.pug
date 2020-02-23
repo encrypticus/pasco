@@ -1,0 +1,13 @@
+mixin title(text, mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' title_' + modsList[i].trim();
+      }
+    }
+
+  h4.title(class=allMods)&attributes(attributes)= text
+    

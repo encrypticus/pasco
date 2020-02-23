@@ -27,3 +27,4 @@ import '../../blocks/post/post';
 import '../../components/image-block/image-block';
 import '../../components/slick-carousel/slick-carousel';
 import '../../components/search-field/search-field';
+import '../../components/title/title';
