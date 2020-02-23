@@ -28,3 +28,4 @@ import '../../components/image-block/image-block';
 import '../../components/slick-carousel/slick-carousel';
 import '../../components/search-field/search-field';
 import '../../components/title/title';
+import '../../components/sidebar-menu/sidebar-menu';

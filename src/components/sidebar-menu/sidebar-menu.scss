@@ -1,0 +1,30 @@
+.sidebar-menu {
+  width: 270px;
+
+  $block-name: &; // #{$block-name}__element
+
+  &__list {
+
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    display: flex;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #000;
+    opacity: .87;
+    justify-content: space-between;
+    letter-spacing: .56px;
+    text-decoration: none;
+  }
+
+  &__count {
+    font-weight: bold;
+  }
+}

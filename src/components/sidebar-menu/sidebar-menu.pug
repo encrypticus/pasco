@@ -1,0 +1,41 @@
+mixin sidebar-menu(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' sidebar-menu_' + modsList[i].trim();
+      }
+    }
+
+  nav.sidebar-menu(class=allMods)&attributes(attributes)
+    block
+
+mixin sidebar-menu-list(mods)
+  -
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' sidebar-menu-list_' + modsList[i].trim();
+      }
+    }
+
+  ul.sidebar-menu__list(class=allMods)&attributes(attributes)
+    block
+
+mixin sidebar-menu-item({ text = '', href = '/', count = 0 }, mods)
+  -
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' sidebar-menu-list_' + modsList[i].trim();
+      }
+    }
+
+  li.sidebar-menu__item(class=allMods)&attributes(attributes)
+    a.sidebar-menu__link(href= href)= text
+      span.sidebar-menu__count= count
+    

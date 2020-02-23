@@ -305,3 +305,16 @@ block content
           +inspiration('search', 'color_dark')
         .uikit__search-field
           +search-field
+
+        .uikit__inspiration
+          +inspiration('sidebar menu & subscribe form', 'color_dark')
+        .uikit__sidebar
+          div
+            +title('categories', 'color_blue,bordered')
+            +sidebar-menu
+              +sidebar-menu-list
+                +sidebar-menu-item({ text: 'Photography', count: 165 })
+                +sidebar-menu-item({ text: 'Illustration', count: 15 })
+                +sidebar-menu-item({ text: 'Graphic Design', count: 36 })
+                +sidebar-menu-item({ text: 'Web design', count: 220 })
+                +sidebar-menu-item({ text: 'Videography', count: 17 })
