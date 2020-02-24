@@ -1,0 +1,20 @@
+mixin subscribe-form({ method = 'POST', action = '/' , name = 'subscribe-form' } = {}, mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' subscribe-form_' + modsList[i].trim();
+      }
+    }
+
+  form.subscribe-form(class=allMods)&attributes(attributes)
+    block
+
+mixin subscribe-form-text-field({ type = 'text', name = 'text', placeholder = '', labelText = 'Text field' } = {})
+  p.subscribe-form__field-wrapper
+    label.subscribe-form__label(for= name)= labelText
+  p.subscribe-form__field-wrapper
+    input.subscribe-form__field(type= type, name= name, placeholder= placeholder, id= name)
+    
