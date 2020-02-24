@@ -30,3 +30,4 @@ import '../../components/search-field/search-field';
 import '../../components/title/title';
 import '../../components/sidebar-menu/sidebar-menu';
 import '../../components/subscribe-form/subscribe-form';
+import '../../components/widgets/color-socials/color-socials';
