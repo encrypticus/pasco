@@ -1,4 +1,4 @@
-@import '../../scss/variables';
+@import '../../scss/utils';
 
 .btn {
   display: inline-block;
@@ -96,6 +96,10 @@
     border-radius: 40px;
     box-shadow: 0 17px 24px rgba(48, 63, 159, .2);
     letter-spacing: .7px;
+
+    @include for-phone-only {
+      font-size: 20px;
+    }
   }
 
   &_type_rect {
@@ -103,6 +107,11 @@
     font-size: 23px;
     border-radius: 4px;
     letter-spacing: 0;
+
+    @include for-phone-only {
+      padding: 4px 70px;
+      font-size: 20px;
+    }
   }
 
   &_theme_blue {
@@ -125,6 +134,10 @@
     letter-spacing: .7px;
     background-color: $color-button-dark;
     transition: background-color, .3s;
+
+    @include for-phone-only {
+      padding: 4px 70px;
+    }
 
     &:hover {
       background-color: lighten($color-button-dark, 5%);
