@@ -309,7 +309,7 @@ block content
         .uikit__inspiration
           +inspiration('sidebar menu & subscribe form', 'color_dark')
         .uikit__sidebar
-          div
+          .uikit__sidebar-menu
             +title('categories', 'color_blue,bordered')
             +sidebar-menu
               +sidebar-menu-list
@@ -318,3 +318,10 @@ block content
                 +sidebar-menu-item({ text: 'Graphic Design', count: 36 })
                 +sidebar-menu-item({ text: 'Web design', count: 220 })
                 +sidebar-menu-item({ text: 'Videography', count: 17 })
+
+          .uikit__sidebar-form
+            +title('subscribe', 'color_blue,bordered')
+            +subscribe-form
+              +subscribe-form-text-field({ name: 'name', placeholder: 'Igor Ten', labelText: 'Name' })
+              +subscribe-form-text-field({ name: 'email', placeholder: 'email@adress.com', labelText: 'Email' })
+              +btn('subscribe', 'type_rect, theme_blue')(href='#')

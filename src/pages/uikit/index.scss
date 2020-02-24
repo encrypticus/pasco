@@ -167,11 +167,37 @@
 
   &__sidebar {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
-    grid-gap: 20px;
+    grid-row-gap: 20px;
+    grid-column-gap: 80px;
     margin-bottom: 60px;
     padding: 20px;
     background-color: #fff;
+
+    @include for-phone-landscape-down {
+      grid-template-columns: 1fr;
+      padding: 20px 10px;
+    }
+
+    @include for-tablet-landscape-down {
+      grid-column-gap: 20px;
+    }
+  }
+
+  &__sidebar-menu {
+    justify-self: right;
+
+    @include for-tablet-landscape-down {
+      justify-self: unset;
+    }
+  }
+
+  &__sidebar-form {
+    justify-self: left;
+
+    @include for-tablet-landscape-down {
+      justify-self: unset;
+    }
   }
 }
