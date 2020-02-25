@@ -1,0 +1,41 @@
+.sort-post-buttons {
+
+  $block-name: &; // #{$block-name}__element
+
+  display: flex;
+  width: 270px;
+
+  &__btn {
+    display: none;
+
+    &_type_left + #{$block-name}__label {
+      border-radius: 4px 0 0 4px;
+    }
+
+    &_type_right + #{$block-name}__label {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 40px;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 16px;
+    color: #3f51b5;
+    border: 1px solid #3f51b5;
+    font-variant: small-caps;
+    letter-spacing: .8px;
+    cursor: pointer;
+    user-select: none;
+    box-sizing: border-box;
+  }
+
+  &__btn:checked + &__label {
+    color: #fff;
+    background-color: #3f51b5;
+  }
+}

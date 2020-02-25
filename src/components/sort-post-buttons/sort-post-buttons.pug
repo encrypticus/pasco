@@ -1,0 +1,28 @@
+mixin sort-post-buttons(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' sort-post-buttons_' + modsList[i].trim();
+      }
+    }
+
+  .sort-post-buttons(class=allMods)&attributes(attributes)
+    block
+
+mixin sort-post-buttons-btn({ text = '', name = 'radio', id = 'radio', value = '' } = {}, mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if (typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' sort-post-buttons__btn_' + modsList[i].trim();
+      }
+    }
+
+  input.sort-post-buttons__btn(class= allMods, type='radio', name= name, id= id, value= value)&attributes(attributes)
+  label.sort-post-buttons__label(for= id)= text
+    
