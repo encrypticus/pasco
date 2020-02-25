@@ -20,6 +20,19 @@ block content
           +btn('subscribe', 'type_rect, theme_blue')(href='#')
           +btn('read more', 'type_ellipse, theme_blue')(href='#')
           +btn('subscribe', 'type_rect, theme_dark')(href='#')
+          +sort-post-buttons
+            +sort-post-buttons-btn({
+              text: 'recent post',
+              name: 'sort-post',
+              id: 'radio1',
+              value: 'radio1'
+            }, 'type_left')(checked)
+            +sort-post-buttons-btn({
+              text: 'popular post',
+              name: 'sort-post',
+              id: 'radio2',
+              value: 'radio2'
+            }, 'type_right')
 
         .uikit__inspiration
           +inspiration('user', 'color_dark')
@@ -336,3 +349,7 @@ block content
           +tab-post({ text, img: '../../components/tab-post/img/tab-post2.jpg' })
           +tab-post({ text, img: '../../components/tab-post/img/tab-post3.jpg' })
           +tab-post({ text, img: '../../components/tab-post/img/tab-post4.jpg' })
+
+        .uikit__inspiration
+          +inspiration('tab post widget & tags', 'color_dark')
+        .uikit__tab-post-widget

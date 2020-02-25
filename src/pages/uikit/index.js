@@ -32,3 +32,4 @@ import '../../components/sidebar-menu/sidebar-menu';
 import '../../components/subscribe-form/subscribe-form';
 import '../../components/widgets/color-socials/color-socials';
 import '../../components/tab-post/tab-post';
+import '../../components/sort-post-buttons/sort-post-buttons';
