@@ -216,4 +216,20 @@
       justify-self: unset;
     }
   }
+
+  &__tab-post {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    grid-gap: 20px;
+    margin-bottom: 60px;
+
+    @include for-desktop-down {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include for-phone-landscape-down {
+      grid-template-columns: 1fr;
+    }
+  }
 }

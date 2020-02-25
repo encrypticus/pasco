@@ -327,3 +327,12 @@ block content
               +subscribe-form-text-field({ name: 'name', placeholder: 'Igor Ten', labelText: 'Name' })
               +subscribe-form-text-field({ name: 'email', placeholder: 'email@adress.com', labelText: 'Email' })
               +btn('subscribe', 'type_rect, theme_blue')(href='#')
+
+        .uikit__inspiration
+          +inspiration('tab post', 'color_dark')
+        .uikit__tab-post
+          - var text = 'Duis commodo elit sed nisi molestie';
+          +tab-post({ text })
+          +tab-post({ text, img: '../../components/tab-post/img/tab-post2.jpg' })
+          +tab-post({ text, img: '../../components/tab-post/img/tab-post3.jpg' })
+          +tab-post({ text, img: '../../components/tab-post/img/tab-post4.jpg' })
