@@ -1,0 +1,21 @@
+mixin tab-post({ img = '../../components/tab-post/img/tab-post1.jpg', date = 'April 28, 2016', text = '' } = {},mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' tab-post_' + modsList[i].trim();
+      }
+    }
+
+  .tab-post(class=allMods)&attributes(attributes)
+    img.tab-post__img(src= img, alt= 'post image')
+    .tab-post__content
+      header.tab-post__header
+        time.tab-post__date= date
+        .tab-post__comments
+          +comments('17', 'forum', 'color_blue')
+      h4.tab-post__title= text
+
+    
