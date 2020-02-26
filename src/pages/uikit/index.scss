@@ -236,13 +236,34 @@
   &__tab-post-widget {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
     justify-items: center;
     margin-bottom: 60px;
     padding: 20px;
 
+    @include for-tablet-landscape-down {
+      grid-gap: 40px;
+    }
+
     @include for-phone-landscape-down {
       grid-template-columns: 1fr;
       padding: 20px 0;
+    }
+  }
+
+  &__tab-post-widget-wrapper {
+    justify-self: right;
+
+    @include for-phone-landscape-down {
+      justify-self: center;
+    }
+  }
+
+  &__tags {
+    justify-self: left;
+
+    @include for-phone-landscape-down {
+      justify-self: center;
     }
   }
 }

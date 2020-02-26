@@ -353,7 +353,8 @@ block content
         .uikit__inspiration
           +inspiration('tab post widget & tags', 'color_dark')
         .uikit__tab-post-widget
-          +tab-post-widget
+          .uikit__tab-post-widget-wrapper
+            +tab-post-widget
             .tab-post-widget__title
               +title('tab post widget', 'color_blue,bordered')
             .tab-post-widget__buttons
@@ -380,5 +381,9 @@ block content
                 +tab-post({ text, img: '../../components/tab-post/img/tab-post3.jpg' })
               +tab-post-widget-item
                 +tab-post({ text, img: '../../components/tab-post/img/tab-post4.jpg' })
+          .uikit__tags
+            .tab-post-widget__title
+              +title('tags', 'color_blue,bordered')
+            +tags
 
 
