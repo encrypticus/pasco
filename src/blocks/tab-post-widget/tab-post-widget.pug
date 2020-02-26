@@ -1,0 +1,21 @@
+mixin tab-post-widget(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' btn_' + modsList[i].trim();
+      }
+    }
+
+  .tab-post-widget(class=allMods)&attributes(attributes)
+    block
+
+mixin tab-post-widget-list()
+  ul.tab-post-widget__list
+    block
+
+mixin tab-post-widget-item()
+  li.tab-post-widget__item
+    block
