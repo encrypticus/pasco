@@ -1,0 +1,19 @@
+mixin tags(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' tags_' + modsList[i].trim();
+      }
+    }
+
+  include tags.data.pug
+
+  ul.tags(class=allMods)&attributes(attributes)
+    each item in tags
+      li.tags__item
+        a.tags__link(href= item.href)= item.name
+
+    
