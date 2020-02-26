@@ -234,6 +234,15 @@
   }
 
   &__tab-post-widget {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     margin-bottom: 60px;
+    padding: 20px;
+
+    @include for-phone-landscape-down {
+      grid-template-columns: 1fr;
+      padding: 20px 0;
+    }
   }
 }

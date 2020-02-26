@@ -353,3 +353,32 @@ block content
         .uikit__inspiration
           +inspiration('tab post widget & tags', 'color_dark')
         .uikit__tab-post-widget
+          +tab-post-widget
+            .tab-post-widget__title
+              +title('tab post widget', 'color_blue,bordered')
+            .tab-post-widget__buttons
+              +sort-post-buttons
+                +sort-post-buttons-btn({
+                  text: 'recent post',
+                  name: 'sort-posts',
+                  id: 'recentPost',
+                  value: 'recentPost'
+                }, 'type_left')(checked)
+                +sort-post-buttons-btn({
+                  text: 'popular post',
+                  name: 'sort-posts',
+                  id: 'popularPost',
+                  value: 'popularPost'
+                }, 'type_right')
+            +tab-post-widget-list
+              +tab-post-widget-item
+                - var text = 'Duis commodo elit sed nisi molestie';
+                +tab-post({ text })
+              +tab-post-widget-item
+                +tab-post({ text, img: '../../components/tab-post/img/tab-post2.jpg' })
+              +tab-post-widget-item
+                +tab-post({ text, img: '../../components/tab-post/img/tab-post3.jpg' })
+              +tab-post-widget-item
+                +tab-post({ text, img: '../../components/tab-post/img/tab-post4.jpg' })
+
+
