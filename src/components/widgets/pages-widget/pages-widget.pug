@@ -1,0 +1,30 @@
+mixin pages-widget(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' pages-widget_' + modsList[i].trim();
+      }
+    }
+
+  .pages-widget(class=allMods)&attributes(attributes)
+    block
+
+mixin pages-widget-item(mods)
+  .pages-widget__item
+    block
+
+mixin pages-widget-button(text, mods)
+  button.pages-widget__button= text
+    span.pages-widget__icon(role= "button")
+
+mixin pages-widget-list(mods)
+  ul.pages-widget__list
+    block
+
+mixin pages-widget-list-item(text = '', href = '#', mods)
+  li.pages-widget__list-item
+    a.pages-widget__link(href= href)= text
+    
