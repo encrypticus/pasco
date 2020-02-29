@@ -35,12 +35,12 @@ if (blockName) {
         let fileCreateMsg = '';                                 // будущее сообщение в консоли при создании файла
 
         if (extension === 'scss') {
-          fileContent = `// В этом файле должны быть стили для БЭМ-блока ${blockName}, его элементов,\n// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...\n// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority\n\n.${blockName} {\n\n  $block-name:                &; // #{$block-name}__element\n}\n`;
+          fileContent = `.${blockName} {\n\n  $block-name: &; // #{$block-name}__element\n}\n`;
           // fileCreateMsg = '';
         }
 
         else if (extension === 'js') {
-          fileContent = `/* global document */\n\n// const ready = require('../../js/utils/documentReady.js');\n\n// ready(function(){\n//   \n// });\n`;
+          fileContent = '';
         }
 
         else if (extension === 'md') {
@@ -48,7 +48,7 @@ if (blockName) {
         }
 
         else if (extension === 'pug') {
-          fileContent = `//- Все примеси в этом файле должны начинаться c имени блока (${blockName})\n\nmixin ${blockName}(mods)\n\n  //- Принимает:\n  //-   text    {string} - текст\n  //-   mods    {string} - список модификаторов\n  //- Вызов:\n        +${blockName}('Текст', 'some-mod')\n\n  -\n    // список модификаторов\n    var allMods = '';\n    if(typeof(mods) !== 'undefined' && mods) {\n      var modsList = mods.split(',');\n      for (var i = 0; i < modsList.length; i++) {\n        allMods = allMods + ' ${blockName}_' + modsList[i].trim();\n      }\n    }\n\n  .${blockName}(class=allMods)&attributes(attributes)\n    `;
+          fileContent = `mixin ${blockName}(mods)\n  -\n    // список модификаторов\n    var allMods = '';\n    if(typeof(mods) !== 'undefined' && mods) {\n      var modsList = mods.split(',');\n      for (var i = 0; i < modsList.length; i++) {\n        allMods = allMods + ' ${blockName}_' + modsList[i].trim();\n      }\n    }\n\n  .${blockName}(class=allMods)&attributes(attributes)\n    `;
         }
 
         else if (extension === 'img') {
