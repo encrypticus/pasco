@@ -1,0 +1,44 @@
+.btn-more {
+
+  $block-name: &; // #{$block-name}__element
+
+  display: flex;
+  width: 93px;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #303f9f;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: .8px;
+
+  &__text {
+    font: inherit;
+  }
+
+  &__button {
+    width: 42px;
+    height: 42px;
+    font-family: 'Material Icons', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #3f51b5;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .12);
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+    transition: background-color .3s, color .3s;
+
+    &:hover {
+      color: lighten(#3f51b5, 10);
+      background-color: darken(#fff, 5);
+    }
+
+    &:active {
+      color: darken(#3f51b5, 10);
+      background-color: darken(#fff, 10);
+    }
+  }
+}

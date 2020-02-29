@@ -1,0 +1,16 @@
+mixin btn-more(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' btn-more_' + modsList[i].trim();
+      }
+    }
+
+  .btn-more(class=allMods)&attributes(attributes)
+    span.btn-more__text More
+    button.btn-more__button
+      span.mi.mi-arrow-forward
+    
