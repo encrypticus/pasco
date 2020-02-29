@@ -266,4 +266,19 @@
       justify-self: center;
     }
   }
+
+  &__social-widgets {
+    display: grid;
+    padding: 20px;
+    background-color: #212121;
+    grid-gap: 30px;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+
+    @include for-phone-landscape-down {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
 }
