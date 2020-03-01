@@ -273,8 +273,7 @@
     background-color: #212121;
     grid-gap: 30px;
     justify-items: center;
-    align-items: center;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
 
     @include for-phone-landscape-down {
       padding-left: 5px;

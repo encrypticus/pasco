@@ -37,3 +37,4 @@ import '../../blocks/tab-post-widget/tab-post-widget';
 import '../../components/tags/tags';
 import '../../components/btn-more/btn-more';
 import '../../components/widgets/pages-widget/pages-widget';
+import '../../components/widgets/twitter-widget/twitter-widget';
