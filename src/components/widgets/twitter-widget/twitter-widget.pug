@@ -1,0 +1,32 @@
+mixin twitter-widget(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' twitter-widget_' + modsList[i].trim();
+      }
+    }
+
+  ul.twitter-widget(class=allMods)&attributes(attributes)
+    block
+
+mixin twitter-widget-item(mods)
+  li.twitter-widget__item
+    block
+
+mixin twitter-widget-body(text = '@PASCO, Duis commodo elit sed nisi molestie')
+  .twitter-widget__body
+    span.fab.fa-twitter.twitter-widget__icon
+    p.twitter-widget__text= text
+
+mixin twitter-widget-footer()
+  include links.data.pug
+
+  .twitter-widget__footer
+    each link in links
+      a.twitter-widget__link(href= link.href)= link.text
+
+
+    
