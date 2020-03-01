@@ -38,3 +38,4 @@ import '../../components/tags/tags';
 import '../../components/btn-more/btn-more';
 import '../../components/widgets/pages-widget/pages-widget';
 import '../../components/widgets/twitter-widget/twitter-widget';
+import '../../components/widgets/flickr-widget/flickr-widget';
