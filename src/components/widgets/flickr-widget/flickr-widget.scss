@@ -1,0 +1,14 @@
+.flickr-widget {
+
+  $block-name: &; // #{$block-name}__element
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+  grid-gap: 7px;
+  width: 270px;
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}
