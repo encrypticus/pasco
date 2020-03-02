@@ -1,0 +1,15 @@
+.image-gallery {
+
+  $block-name: &; // #{$block-name}__element
+
+  display: flex;
+
+  &__wrapper {
+    width: 12.5%;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+}
