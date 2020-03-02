@@ -15,7 +15,8 @@
 
     &__video-wrapper {
       max-height: 420px;
-      height: 100%;
+      margin-top: -21px;
+      margin-bottom: -15px;
     }
 
     &__poster {
@@ -44,6 +45,7 @@
 
       &__video-wrapper {
         max-height: 165px;
+        margin-top: 0;
       }
 
       &__poster {
