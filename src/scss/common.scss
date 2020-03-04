@@ -1,7 +1,11 @@
 @import '../scss/utils';
 
 html {
-  font-size: 10px;
+  font-size: 16px;
+
+  @include for-tablet-landscape-down {
+    font-size: 12px;
+  }
 }
 
 body {
