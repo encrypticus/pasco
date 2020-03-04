@@ -21,3 +21,75 @@ mixin header(active, mods)
           +main-nav(active)
         .page-header__search
           +header-search
+      if (mods !== 'uikit')
+        .page-header__carousel
+          +slick-carousel
+            .page-header__content
+              .page-header__inspiration
+                +inspiration('inspiration')
+              - var text = '5 Ways milllennials can start building their future today';
+              .page-header__title
+                +big-title(text)
+              .page-header__button
+                +btn('read more', 'type_ellipse, theme_blue')(href='#')
+              .page-header__user
+                +user('../../components/user/img/user1.png', 'Henry Little', 'April 28, 2016   10:15')
+              .page-header__comments
+                +comments('Comments (28)', 'forum')
+                +comments('Likes (07)', 'favorite')
+
+            .page-header__content
+              .page-header__inspiration
+                +inspiration('inspiration')
+              - var text = '5 Ways milllennials can start building their future today';
+              .page-header__title
+                +big-title(text)
+              .page-header__button
+                +btn('read more', 'type_ellipse, theme_blue')(href='#')
+              .page-header__user
+                +user('../../components/user/img/user1.png', 'Henry Little', 'April 28, 2016   10:15')
+              .page-header__comments
+                +comments('Comments (28)', 'forum')
+                +comments('Likes (07)', 'favorite')
+
+            .page-header__content
+              .page-header__inspiration
+                +inspiration('inspiration')
+              - var text = '5 Ways milllennials can start building their future today';
+              .page-header__title
+                +big-title(text)
+              .page-header__button
+                +btn('read more', 'type_ellipse, theme_blue')(href='#')
+              .page-header__user
+                +user('../../components/user/img/user1.png', 'Henry Little', 'April 28, 2016   10:15')
+              .page-header__comments
+                +comments('Comments (28)', 'forum')
+                +comments('Likes (07)', 'favorite')
+
+            .page-header__content
+              .page-header__inspiration
+                +inspiration('inspiration')
+              - var text = '5 Ways milllennials can start building their future today';
+              .page-header__title
+                +big-title(text)
+              .page-header__button
+                +btn('read more', 'type_ellipse, theme_blue')(href='#')
+              .page-header__user
+                +user('../../components/user/img/user1.png', 'Henry Little', 'April 28, 2016   10:15')
+              .page-header__comments
+                +comments('Comments (28)', 'forum')
+                +comments('Likes (07)', 'favorite')
+
+            .page-header__content
+              .page-header__inspiration
+                +inspiration('inspiration')
+              - var text = '5 Ways milllennials can start building their future today';
+              .page-header__title
+                +big-title(text)
+              .page-header__button
+                +btn('read more', 'type_ellipse, theme_blue')(href='#')
+              .page-header__user
+                +user('../../components/user/img/user1.png', 'Henry Little', 'April 28, 2016   10:15')
+              .page-header__comments
+                +comments('Comments (28)', 'forum')
+                +comments('Likes (07)', 'favorite')

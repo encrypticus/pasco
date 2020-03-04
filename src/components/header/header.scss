@@ -1,6 +1,7 @@
 @import '../../scss/utils';
 
 .page-header {
+  position: relative;
   min-height: 800px;
   box-sizing: border-box;
   height: 1px;
@@ -70,5 +71,51 @@
     @include for-laptop-down {
       display: block;
     }
+  }
+
+  &__carousel {
+    @include for-phone-landscape-down {
+      display: none;
+    }
+  }
+
+  &__content {
+    margin-top: pxToRem(217);
+    text-align: center;
+  }
+
+  &__title {
+    max-width: 815px;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @include for-middle-laptop-down {
+      max-width: 700px;
+    }
+
+    @include for-tablet-landscape-down {
+      max-width: 500px;
+    }
+  }
+
+  &__inspiration {
+    margin-bottom: pxToRem(30);
+  }
+
+  &__button {
+    margin-bottom: pxToRem(80);
+    text-align: center;
+  }
+
+  &__user {
+    margin-bottom: 22px;
+  }
+
+  &__comments {
+    display: flex;
+    width: 221px;
+    margin: auto;
+    justify-content: space-between;
   }
 }
