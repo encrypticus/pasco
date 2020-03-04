@@ -6,7 +6,9 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  max-width: 260px;
+  &_size_sm {
+    max-width: 260px;
+  }
 
   &__btn {
     position: absolute;
@@ -14,6 +16,7 @@
     display: block;
     width: 36px;
     height: 36px;
+    padding: 0;
     font-family: 'Material Icons', Arial, sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -21,6 +24,19 @@
     background-color: #fff;
     border: 0;
     cursor: pointer;
+
+    &_size_lg {
+      width: auto;
+      height: auto;
+      background-color: initial;
+
+      span {
+        font-size: 42px;
+        font-weight: 400;
+        color: #fff;
+        letter-spacing: 2.1px;
+      }
+    }
   }
 
   &__btn_prev {
