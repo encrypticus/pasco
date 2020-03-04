@@ -1,0 +1,12 @@
+@import '../../scss/utils';
+
+.big-title {
+
+  $block-name: &; // #{$block-name}__element
+  font-family: 'Montserrat Black', Arial, sans-serif;
+  font-size: pxToRem(42);
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+}
