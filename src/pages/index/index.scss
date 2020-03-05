@@ -1,1 +1,13 @@
 @import '../../scss/utils';
+
+.main-page {
+
+  &__sort-blog {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    background-color: $color-secondary;
+    margin-bottom: 60px;
+    box-shadow: 0 1px 0 #ddd;
+  }
+}
