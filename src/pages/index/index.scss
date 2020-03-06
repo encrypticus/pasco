@@ -6,8 +6,13 @@
     display: flex;
     flex-wrap: wrap;
     padding: 15px 0;
+    padding-left: pxToPercent(375, 1920);
     background-color: $color-secondary;
-    box-shadow: 0 1px 0 #ddd;
+    border-bottom: 1px solid rgba(#000, .12);
+
+    @include for-middle-laptop-down {
+      padding-left: 20px;
+    }
 
     @include for-phone-only {
       display: none;
@@ -24,4 +29,35 @@
       align-items: center;
     }
   }
+
+  &__title {
+    max-width: 270px;
+  }
+
+  &__search-field {
+    margin-bottom: 30px;
+  }
+
+  &__sidebar-menu {
+    margin-bottom: 30px;
+  }
+
+  &__subscribe-form {
+    max-width: 270px;
+    margin-bottom: 20px;
+  }
+}
+
+.block-left {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  background-color: #fff;
+}
+
+.block-right {
+  padding-left: 40px;
+  padding-top: 23px;
+  background-color: #fff;
 }

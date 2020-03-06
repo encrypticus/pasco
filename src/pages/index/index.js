@@ -26,3 +26,7 @@ import '../../components/sort-blog/sort-blog';
 import '../../components/sort-blog-mob/sort-blog-mob';
 import '../../blocks/post/post';
 import '../../components/video/video';
+import '../../components/search-field/search-field';
+import '../../components/sidebar-menu/sidebar-menu';
+import '../../components/title/title';
+import '../../components/subscribe-form/subscribe-form';

@@ -13,8 +13,7 @@ block content
       include ../../blocks/top-line/top-line
       +header('1')
       .main-page__sort-blog
-        .wrapper
-          +sort-blog
+        +sort-blog
       .wrapper.wrapper_sort-blog-mob
         .main-page__sort-blog-mob
           +sort-blog-mob
@@ -37,3 +36,23 @@ block content
               +user('../../components/user/img/user2.png', 'Henry Little', 'April 28, 2016   10:15', 'color_dark, float')
               +post-button
         section.block-right
+          .main-page__search-field
+            +search-field
+          .main-page__title
+            +title('categories', 'color_blue,bordered')
+          .main-page__sidebar-menu
+            +sidebar-menu
+              +sidebar-menu-list
+                +sidebar-menu-item({ text: 'Photography', count: 165 })
+                +sidebar-menu-item({ text: 'Illustration', count: 15 })
+                +sidebar-menu-item({ text: 'Graphic Design', count: 36 })
+                +sidebar-menu-item({ text: 'Web design', count: 220 })
+                +sidebar-menu-item({ text: 'Videography', count: 17 })
+
+          .main-page__title
+            +title('subscribe', 'color_blue,bordered')
+          .main-page__subscribe-form
+            +subscribe-form
+              +subscribe-form-text-field({ name: 'name', placeholder: 'Igor Ten', labelText: 'Name' })
+              +subscribe-form-text-field({ name: 'email', placeholder: 'email@adress.com', labelText: 'Email' })
+              +btn('subscribe', 'type_rect, theme_blue')(href='#')
