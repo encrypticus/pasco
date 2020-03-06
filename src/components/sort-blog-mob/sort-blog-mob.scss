@@ -1,0 +1,59 @@
+@import '../../scss/utils';
+
+.sort-blog-mob {
+
+  $block-name: &; // #{$block-name}__element
+
+  width: 100%;
+  padding: 10px 45px 10px 16px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  background-color: transparent;
+  border: 1px solid rgba(#000, .12);
+  border-radius: 4px;
+  opacity: .87;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  letter-spacing: .8px;
+
+  &-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  &-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 45px;
+    height: 100%;
+    font-family: 'Material Icons', Arial, sans-serif;
+    font-size: 24px;
+    background-color: #eee;
+    border-radius: 0 4px 4px 0;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #e0e0e0;
+    box-sizing: border-box;
+
+    &::before,
+    &::after {
+      display: block;
+      opacity: .54;
+    }
+
+    &::before {
+      content: '\e5c7';
+      margin-top: 3px;
+    }
+
+    &::after {
+      content: '\e5c5';
+      margin-top: -13px;
+    }
+  }
+}

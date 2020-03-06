@@ -1,0 +1,19 @@
+mixin sort-blog-mob(name = 'sort blog', mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' sort-blog-mob_' + modsList[i].trim();
+      }
+    }
+
+  include sort-blog-mob-data.pug
+
+  .sort-blog-mob-wrapper
+    label.sort-blog-mob-label(for= "sort blog")
+    select.sort-blog-mob(class=allMods, id= "sort blog", name= name)&attributes(attributes)
+      each option in options
+        option= option
+    
