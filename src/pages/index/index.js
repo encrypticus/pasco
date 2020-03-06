@@ -23,3 +23,4 @@ import '../../components/user/user';
 import '../../components/widgets/comments/comments';
 import '../../components/slick-carousel/slick-carousel-index';
 import '../../components/sort-blog/sort-blog';
+import '../../components/sort-blog-mob/sort-blog-mob';

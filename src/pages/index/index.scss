@@ -9,5 +9,20 @@
     background-color: $color-secondary;
     margin-bottom: 60px;
     box-shadow: 0 1px 0 #ddd;
+
+    @include for-phone-only {
+      display: none;
+    }
+  }
+
+  &__sort-blog-mob {
+    display: none;
+    padding: 8px 0;
+
+    @include for-phone-only {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
