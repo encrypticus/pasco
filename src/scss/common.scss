@@ -61,6 +61,15 @@ body {
 
     @include for-middle-laptop-down {
       padding-left: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+      grid-gap: 20px;
+    }
+
+    @include for-tablet-landscape-down {
+      grid-template-columns: 1fr;
+      padding-right: 20px;
     }
   }
 }

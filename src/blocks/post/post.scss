@@ -10,12 +10,6 @@
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .12);
   overflow: hidden;
 
-  &_size_md {
-    @include for-tablet-landscape-down {
-      max-width: 260px;
-    }
-  }
-
   &_type_vertical_sm {
     max-width: 260px;
 
@@ -52,7 +46,6 @@
 
     #{$block-name}__content {
       padding-top: 7px;
-      padding-left: 280px;
       padding-bottom: 10px;
 
       @include for-tablet-landscape-down {
@@ -144,9 +137,11 @@
   &__left {
     float: left;
     clear: both;
+    margin-right: 20px;
 
-    @include for-tablet-landscape-down {
+    @include for-desktop-down {
       float: none;
+      margin-right: initial;
     }
   }
 }

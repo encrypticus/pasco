@@ -50,6 +50,7 @@
 
 .block-left {
   display: grid;
+  justify-items: center;
   grid-template-columns: 1fr;
   grid-gap: 20px;
   background-color: #f5f5f5;
@@ -59,4 +60,9 @@
   padding-left: 40px;
   padding-top: 23px;
   background-color: #fff;
+
+  @include for-middle-laptop-down {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

@@ -3,7 +3,7 @@
   $block-name: &; // #{$block-name}__element
 
   position: relative;
-  width: 270px;
+  max-width: 270px;
 
 
   &__input {

@@ -1,7 +1,7 @@
 @import '../../scss/utils';
 
 .sidebar-menu {
-  width: 270px;
+  max-width: 270px;
 
   @include for-phone-only {
     width: 250px;
