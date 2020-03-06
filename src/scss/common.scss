@@ -48,4 +48,11 @@ body {
   box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
+
+  &_main-page {
+    padding-left: pxToPercent(375, 1920);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+  }
 }

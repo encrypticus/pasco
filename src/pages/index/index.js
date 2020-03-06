@@ -24,3 +24,5 @@ import '../../components/widgets/comments/comments';
 import '../../components/slick-carousel/slick-carousel-index';
 import '../../components/sort-blog/sort-blog';
 import '../../components/sort-blog-mob/sort-blog-mob';
+import '../../blocks/post/post';
+import '../../components/video/video';
