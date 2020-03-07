@@ -11,14 +11,21 @@
   overflow: hidden;
 
   &_type_vertical_sm {
-    max-width: 260px;
 
     #{$block-name}__title {
       font-size: 14px;
+
+      @include for-middle-laptop-down {
+        font-size: 12px;
+      }
     }
 
     #{$block-name}__text {
       font-size: 14px;
+
+      @include for-middle-laptop-down {
+        font-size: 12px;
+      }
     }
 
     #{$block-name}__autor {
@@ -54,6 +61,10 @@
     }
   }
 
+  &_size_sm {
+    max-width: 260px;
+  }
+
   &__title {
     font-family: Montserrat, Arial, sans-serif;
     font-size: 18px;
@@ -61,10 +72,6 @@
     line-height: 1.61;
     opacity: .87;
     letter-spacing: .5px;
-
-    @include for-phone-only {
-      font-size: 14px;
-    }
   }
 
   &_title_color_blue {
@@ -88,10 +95,6 @@
     opacity: .87;
     max-width: 765px;
     letter-spacing: .94px;
-
-    @include for-phone-only {
-      font-size: 14px;
-    }
   }
 
   &_size_md {
