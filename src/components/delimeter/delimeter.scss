@@ -1,0 +1,40 @@
+.delimeter {
+
+  $block-name: &; // #{$block-name}__element
+  position: relative;
+
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    width: 44%;
+    height: 1px;
+    background-color: #000;
+    opacity: .54;
+
+    /* Style for "Shape 1 co" */
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  &__text {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    opacity: .87;
+    //line-height: 36px;
+
+    /* Text style for "or" */
+    letter-spacing: .8px;
+  }
+}
