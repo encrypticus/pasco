@@ -23,7 +23,7 @@ mixin header(active, mods)
           +header-search
       if (mods !== 'uikit')
         .page-header__carousel
-          +slick-carousel
+          +slick-carousel('btn_lg')
             .page-header__content
               .page-header__inspiration
                 +inspiration('inspiration')
@@ -41,16 +41,16 @@ mixin header(active, mods)
             .page-header__content
               .page-header__inspiration
                 +inspiration('inspiration')
-              - var text = '5 Ways milllennials can start building their future today';
+              - var text = 'Lorem ipsum dolor sit amet to consectetur  adipi scing';
               .page-header__title
                 +big-title(text)
               .page-header__button
                 +btn('read more', 'type_ellipse, theme_blue')(href='#')
               .page-header__user
-                +user('../../components/user/img/user1.png', 'Henry Little', 'April 28, 2016   10:15')
+                +user('../../components/user/img/user2.png', 'James Leman', 'May 31, 2018   9:00')
               .page-header__comments
-                +comments('Comments (28)', 'forum')
-                +comments('Likes (07)', 'favorite')
+                +comments('Comments (65)', 'forum')
+                +comments('Likes (32)', 'favorite')
 
             .page-header__content
               .page-header__inspiration
@@ -61,21 +61,21 @@ mixin header(active, mods)
               .page-header__button
                 +btn('read more', 'type_ellipse, theme_blue')(href='#')
               .page-header__user
-                +user('../../components/user/img/user1.png', 'Henry Little', 'April 28, 2016   10:15')
+                +user('../../components/user/img/user3.png', 'Benjamin Miller', 'August 8, 2010   06:05')
               .page-header__comments
-                +comments('Comments (28)', 'forum')
-                +comments('Likes (07)', 'favorite')
+                +comments('Comments (33)', 'forum')
+                +comments('Likes (25)', 'favorite')
 
             .page-header__content
               .page-header__inspiration
                 +inspiration('inspiration')
-              - var text = '5 Ways milllennials can start building their future today';
+              - var text = 'Lorem ipsum dolor sit amet to consectetur  adipi scing';
               .page-header__title
                 +big-title(text)
               .page-header__button
                 +btn('read more', 'type_ellipse, theme_blue')(href='#')
               .page-header__user
-                +user('../../components/user/img/user1.png', 'Henry Little', 'April 28, 2016   10:15')
+                +user('../../components/user/img/user4.png', 'John Smith', 'April 28, 2016   10:15')
               .page-header__comments
                 +comments('Comments (28)', 'forum')
                 +comments('Likes (07)', 'favorite')
