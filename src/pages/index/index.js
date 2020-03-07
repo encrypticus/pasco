@@ -33,3 +33,4 @@ import '../../components/title/title';
 import '../../components/subscribe-form/subscribe-form';
 import '../../components/caption/caption';
 import '../../components/image-block/image-block';
+import '../../components/delimeter/delimeter';
