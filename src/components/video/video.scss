@@ -39,7 +39,7 @@
 
   &_size_sm {
     max-width: 260px;
-    height: 165px;
+    //height: 165px;
 
     @include for-desktop-down {
       max-width: 820px;
