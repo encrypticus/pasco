@@ -55,10 +55,15 @@
 
   &__delimeter {
     max-width: 270px;
+    margin-bottom: 20px;
 
     @include for-tablet-landscape-down {
       display: none;
     }
+  }
+
+  &__color-socials {
+    margin-bottom: 45px;
   }
 }
 
