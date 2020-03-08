@@ -9,14 +9,14 @@ const defaultOptions = {
   imageWebpackLoader: {
     mozjpeg: {
       progressive: true,
-      quality: 65
+      quality: 100
     },
     optipng: {
       enabled: false,
     },
     pngquant: {
-      quality: [0.65, 0.90],
-      speed: 4
+      quality: [0.90, 1],
+      speed: 1
     },
     gifsicle: {
       interlaced: false,
