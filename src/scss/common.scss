@@ -65,6 +65,7 @@ body {
       margin-right: auto;
       width: auto;
       grid-template-columns: 60% 40%;
+      grid-gap: 10px;
     }
 
     @include for-tablet-landscape-down {

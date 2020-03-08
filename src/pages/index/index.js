@@ -35,3 +35,6 @@ import '../../components/caption/caption';
 import '../../components/image-block/image-block';
 import '../../components/delimeter/delimeter';
 import '../../components/widgets/color-socials/color-socials';
+import '../../components/tab-post/tab-post';
+import '../../components/sort-post-buttons/sort-post-buttons';
+import '../../blocks/tab-post-widget/tab-post-widget';
