@@ -36,6 +36,22 @@
   &_type_vertical_lg {
     max-width: 400px;
 
+    #{$block-name}__title {
+      font-size: 14px;
+
+      @include for-middle-laptop-down {
+        font-size: 12px;
+      }
+    }
+
+    #{$block-name}__text {
+      font-size: 14px;
+
+      @include for-middle-laptop-down {
+        font-size: 12px;
+      }
+    }
+
     #{$block-name}__autor {
       grid-template-columns: 1fr 4px;
     }
