@@ -3,7 +3,7 @@
   $block-name: &; // #{$block-name}__element
 
   display: flex;
-  width: 270px;
+  max-width: 270px;
 
   &__btn {
     display: none;
