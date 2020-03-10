@@ -234,3 +234,9 @@ block content
           +tags
 
       +image-gallery
+      +block-subscribe
+        .block-subscribe__inner
+          +big-title('Subscribe to our newsletter', 'size_sm')
+          +subscribe-form({ name: 'subscribe-form-footer' }, 'type_footer')
+            +subscribe-form-email-field({ placeholder: 'Email Address' })
+            +btn('subscribe', 'type_ellipse, theme_blue')(href='#')

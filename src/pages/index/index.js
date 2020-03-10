@@ -41,3 +41,4 @@ import '../../blocks/tab-post-widget/tab-post-widget';
 import '../../components/tags/tags';
 import '../../components/btn-more/btn-more';
 import '../../components/image-gallery/image-gallery';
+import '../../components/block-subscribe/block-subscribe';
