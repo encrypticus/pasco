@@ -33,19 +33,40 @@
   &__title,
   &__tab-post-widget {
     max-width: 270px;
+
+    @include for-phone-landscape-down {
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 
   &__search-field {
     margin-bottom: 30px;
+
+    @include for-phone-landscape-down {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__sidebar-menu {
     margin-bottom: 30px;
+
+    @include for-phone-landscape-down {
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 270px;
+    }
   }
 
   &__subscribe-form {
     max-width: 270px;
     margin-bottom: 5px;
+
+    @include for-phone-landscape-down {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__post-group {
@@ -70,6 +91,12 @@
 
   &__color-socials {
     margin-bottom: 45px;
+
+    @include for-phone-landscape-down {
+      margin-right: auto;
+      margin-left: auto;
+      min-width: 270px;
+    }
   }
 
   &__tab-post-widget {
@@ -80,6 +107,16 @@
     justify-self: right;
     margin-top: 20px;
     margin-bottom: 43px;
+  }
+
+  &__tags {
+    margin: auto;
+  }
+
+  &__tags-title {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -103,5 +140,11 @@
 
   @include for-tablet-landscape-down {
     margin-right: 0;
+  }
+
+  @include for-phone-landscape-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
