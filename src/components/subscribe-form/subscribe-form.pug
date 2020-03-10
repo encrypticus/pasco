@@ -9,7 +9,7 @@ mixin subscribe-form({ method = 'POST', action = '/' , name = 'subscribe-form' }
       }
     }
 
-  form.subscribe-form(class=allMods)&attributes(attributes)
+  form.subscribe-form(class=allMods, method= method, action= action, name= name)&attributes(attributes)
     block
 
 mixin subscribe-form-text-field({ type = 'text', name = 'text', placeholder = '', labelText = 'Text field' } = {})
@@ -17,4 +17,6 @@ mixin subscribe-form-text-field({ type = 'text', name = 'text', placeholder = ''
     label.subscribe-form__label(for= name)= labelText
   p.subscribe-form__field-wrapper
     input.subscribe-form__field(type= type, name= name, placeholder= placeholder, id= name)
-    
+
+mixin subscribe-form-email-field({ type = 'email', name = 'email', placeholder = '' } = {})
+  input.subscribe-form__email-field(type= type, name= name, placeholder= placeholder)
