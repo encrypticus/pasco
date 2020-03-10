@@ -9,4 +9,8 @@
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2.1px;
+
+  &_size_sm {
+    text-transform: none;
+  }
 }
