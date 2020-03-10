@@ -1,0 +1,24 @@
+@import '../../scss/utils';
+
+.block-subscribe {
+
+  $block-name: &; // #{$block-name}__element
+
+  padding: pxToRem(70) pxToRem(20);
+  background-image: url(./img/subscribe-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__inner {
+    display: grid;
+    margin: auto;
+    max-width: 1170px;
+    grid-template-columns: 666px 464px;
+    grid-gap: pxToRem(40);
+
+    @include for-desktop-down {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+}
