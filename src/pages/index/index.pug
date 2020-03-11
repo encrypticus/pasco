@@ -192,8 +192,10 @@ block content
             +title('subscribe', 'color_blue,bordered')
           .main-page__subscribe-form
             +subscribe-form
-              +subscribe-form-text-field({ name: 'name', placeholder: 'Igor Ten', labelText: 'Name' })
-              +subscribe-form-text-field({ name: 'email', placeholder: 'email@adress.com', labelText: 'Email' })
+              +subscribe-form-label('Name', 'name')
+              +subscribe-form-text-field({ name: 'name', placeholder: 'Igor Ten' })
+              +subscribe-form-label('Email', 'email')
+              +subscribe-form-text-field({ name: 'email', placeholder: 'email@adress.com' })
               +btn('subscribe', 'type_rect, theme_blue')(href='#')
           .main-page__delimeter
             +delimeter
