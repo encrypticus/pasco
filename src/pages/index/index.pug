@@ -305,3 +305,10 @@ block content
           +flickr-widget
 
         .footer__widget
+          .page-footer__title
+            +title('news letter')
+          +subscribe-form({ name: 'news letter' }, 'theme_dark')
+            +subscribe-form-text-field({ name: 'my_name', placeholder: 'Name' })
+            +subscribe-form-text-field({ name: 'my_email', placeholder: 'Email' })
+            +subscribe-form-message-field
+            +btn('subscribe', 'type_rect, theme_dark')(href='#')

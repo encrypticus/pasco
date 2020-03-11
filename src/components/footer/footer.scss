@@ -12,7 +12,8 @@
     max-width: 1170px;
     margin: auto;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    grid-gap: pxToRem(30);
+    grid-column-gap: pxToRem(30);
+    grid-row-gap: pxToRem(60);
     justify-items: center;
   }
 
