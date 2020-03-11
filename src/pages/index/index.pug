@@ -241,3 +241,65 @@ block content
           +subscribe-form({ name: 'subscribe-form-footer' }, 'type_footer')
             +subscribe-form-email-field({ placeholder: 'Email Address' })
             +btn('subscribe', 'type_ellipse, theme_blue')(href='#')
+
+      +footer
+        .footer__widget
+          .page-footer__title
+            +title('pages widget')
+          +pages-widget
+            +pages-widget-item
+              +pages-widget-button('Home')
+              +pages-widget-list
+                +pages-widget-list-item('Service')
+                +pages-widget-list-item('FAQ')
+                +pages-widget-list-item('About')
+            +pages-widget-item
+              +pages-widget-button('Pages')
+              +pages-widget-list
+                +pages-widget-list-item('Service')
+                +pages-widget-list-item('FAQ')
+                +pages-widget-list-item('About')
+            +pages-widget-item
+              +pages-widget-button('Portfolio')
+              +pages-widget-list
+                +pages-widget-list-item('Service')
+                +pages-widget-list-item('FAQ')
+                +pages-widget-list-item('About')
+            +pages-widget-item
+              +pages-widget-button('Blog')
+              +pages-widget-list
+                +pages-widget-list-item('Service')
+                +pages-widget-list-item('FAQ')
+                +pages-widget-list-item('About')
+            +pages-widget-item
+              +pages-widget-button('Shop')
+              +pages-widget-list
+                +pages-widget-list-item('Service')
+                +pages-widget-list-item('FAQ')
+                +pages-widget-list-item('About')
+
+        .footer__widget
+          .page-footer__title
+            +title('twitter widget')
+          .page-footer__twitter-widget
+            +twitter-widget
+              +twitter-widget-item
+                +twitter-widget-body
+                +twitter-widget-footer
+              +twitter-widget-item
+                +twitter-widget-body
+                +twitter-widget-footer
+              +twitter-widget-item
+                +twitter-widget-body
+                +twitter-widget-footer
+
+          .page-footer__title.page-footer__title_margin_sm
+            +title('social widget')
+          +color-socials
+
+        .footer__widget
+          .page-footer__title
+            +title('flickr widget')
+          +flickr-widget
+
+        .footer__widget
