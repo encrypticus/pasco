@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @include for-phone-landscape-down {
+    display: none;
+  }
+
   &__inner {
     display: grid;
     margin: auto;
