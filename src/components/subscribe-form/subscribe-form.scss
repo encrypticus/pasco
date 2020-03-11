@@ -2,6 +2,8 @@
 
 .subscribe-form {
 
+  $block-name: &;
+
   display: flex;
   flex-direction: column;
   font-family: 'Open Sans', Arial, sans-serif;
@@ -20,7 +22,8 @@
     align-items: center;
   }
 
-  &__field {
+  &__field,
+  &__message-field {
     width: 100%;
     box-sizing: border-box;
     padding-left: 17px;
@@ -34,6 +37,27 @@
 
     &::placeholder {
       color: rgba(#000, .12);
+    }
+  }
+
+  &__message-field {
+    height: 120px;
+    resize: none;
+    margin-bottom: 0 !important;
+  }
+
+  &_theme_dark {
+
+    #{$block-name}__field,
+    #{$block-name}__message-field {
+      font-size: 14px;
+      color: rgba(255, 255, 255, .5);
+      background-color: #212121;
+      border-color: rgba(#fff, .38);
+
+      &::placeholder {
+        color: rgba(255, 255, 255, .5);
+      }
     }
   }
 

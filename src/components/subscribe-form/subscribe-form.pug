@@ -22,3 +22,7 @@ mixin subscribe-form-label(text = '', forName = '')
 
 mixin subscribe-form-email-field({ type = 'email', name = 'email', placeholder = '' } = {})
   input.subscribe-form__email-field(type= type, name= name, placeholder= placeholder)
+
+mixin subscribe-form-message-field(placeholder = 'Message', name = 'message')
+  p.subscribe-form__field-wrapper
+    textarea.subscribe-form__message-field(name= name, placeholder= placeholder)
