@@ -1,0 +1,14 @@
+mixin footer(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' footer_' + modsList[i].trim();
+      }
+    }
+
+  footer.page-footer(class=allMods)&attributes(attributes)
+    .page-footer__inner
+      block

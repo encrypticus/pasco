@@ -1,0 +1,30 @@
+@import '../../scss/utils';
+
+.page-footer {
+
+  $block-name: &; // #{$block-name}__element
+
+  padding: pxToRem(50) pxToRem(20) pxToRem(77);
+  background-color: #212121;
+
+  &__inner {
+    display: grid;
+    max-width: 1170px;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: pxToRem(30);
+    justify-items: center;
+  }
+
+  &__title {
+    margin-bottom: pxToRem(25);
+
+    &_margin_sm {
+      margin-bottom: pxToRem(15);
+    }
+  }
+
+  &__twitter-widget {
+    margin-bottom: pxToRem(15);
+  }
+}
