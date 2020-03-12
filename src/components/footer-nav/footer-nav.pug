@@ -1,0 +1,28 @@
+mixin footer-nav(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' footer-nav_' + modsList[i].trim();
+      }
+    }
+
+  nav.footer-nav(class=allMods)&attributes(attributes)
+    ul.footer-nav__list
+      li.footer-nav__item
+        a.footer-nav__link(href= '#') home
+      li.footer-nav__item
+        a.footer-nav__link(href= 'uikit.html') uikit
+      li.footer-nav__item
+        a.footer-nav__link(href= 'uikit.html') blog
+      li.footer-nav__item
+        a.footer-nav__link(href= 'uikit.html') pages
+      li.footer-nav__item
+        a.footer-nav__link(href= 'uikit.html') shop
+      li.footer-nav__item
+        a.footer-nav__link(href= 'uikit.html') components
+      li.footer-nav__item
+        a.footer-nav__link(href= 'uikit.html') features
+    

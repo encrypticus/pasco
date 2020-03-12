@@ -1,0 +1,11 @@
+.footer-nav {
+
+  $block-name: &; // #{$block-name}__element
+
+  width: 639px;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: .6px;
+  color: #fff;
+}
