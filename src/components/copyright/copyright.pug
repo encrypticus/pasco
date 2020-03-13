@@ -1,0 +1,13 @@
+mixin copyright(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' copyright_' + modsList[i].trim();
+      }
+    }
+
+  p.copyright(class=allMods)&attributes(attributes) © 2016 PASCO | All Rights Reserved
+    
