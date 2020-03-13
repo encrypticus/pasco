@@ -3,9 +3,11 @@
 .tags {
 
   $block-name: &; // #{$block-name}__element
+  float: left;
 
   width: 280px;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   list-style: none;
 
