@@ -1,11 +1,63 @@
+@import '../../scss/utils';
+
 .footer-nav {
 
   $block-name: &; // #{$block-name}__element
 
-  width: 639px;
-  font-family: Montserrat, Arial, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: .6px;
-  color: #fff;
+  width: pxToRem(639);
+
+  @include for-phone-landscape-down {
+    width: auto;
+  }
+
+  &__list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+
+    @include for-phone-only {
+      flex-direction: column;
+      align-items: center;
+      justify-content: initial;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: .6px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include for-phone-landscape-down {
+      padding: 10px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      transition: transform .3s;
+      transform: scaleX(0);
+      transform-origin: center;
+    }
+
+    &:hover {
+
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+
 }
