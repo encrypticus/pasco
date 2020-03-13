@@ -17,6 +17,8 @@
   }
 
   &__socials {
+    width: 219px;
+
     @include for-phone-only {
       display: none;
     }
