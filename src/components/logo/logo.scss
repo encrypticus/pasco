@@ -16,6 +16,10 @@
     margin-left: 20px;
   }
 
+  @include for-small-phone-only {
+    margin-left: 0;
+  }
+
   &:hover {
     background-color: rgba(255, 255, 255, .2);
   }
