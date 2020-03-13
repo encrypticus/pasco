@@ -50,3 +50,4 @@ import '../../components/footer-nav/footer-nav';
 import '../../blocks/block-bottom/block-bottom';
 import '../../components/block-right-text/block-right-text';
 import '../../components/widgets/flickr-widget-mob/flickr-widget-mob';
+import '../../components/copyright/copyright';

@@ -258,73 +258,78 @@ block content
             +btn('subscribe', 'type_ellipse, theme_blue')(href='#')
 
       +footer
-        .footer__widget
-          .page-footer__title
-            +title('pages widget')
-          +pages-widget
-            +pages-widget-item
-              +pages-widget-button('Home')
-              +pages-widget-list
-                +pages-widget-list-item('Service')
-                +pages-widget-list-item('FAQ')
-                +pages-widget-list-item('About')
-            +pages-widget-item
-              +pages-widget-button('Pages')
-              +pages-widget-list
-                +pages-widget-list-item('Service')
-                +pages-widget-list-item('FAQ')
-                +pages-widget-list-item('About')
-            +pages-widget-item
-              +pages-widget-button('Portfolio')
-              +pages-widget-list
-                +pages-widget-list-item('Service')
-                +pages-widget-list-item('FAQ')
-                +pages-widget-list-item('About')
-            +pages-widget-item
-              +pages-widget-button('Blog')
-              +pages-widget-list
-                +pages-widget-list-item('Service')
-                +pages-widget-list-item('FAQ')
-                +pages-widget-list-item('About')
-            +pages-widget-item
-              +pages-widget-button('Shop')
-              +pages-widget-list
-                +pages-widget-list-item('Service')
-                +pages-widget-list-item('FAQ')
-                +pages-widget-list-item('About')
+        .page-footer__inner
+          .footer__widget
+            .page-footer__title
+              +title('pages widget')
+            +pages-widget
+              +pages-widget-item
+                +pages-widget-button('Home')
+                +pages-widget-list
+                  +pages-widget-list-item('Service')
+                  +pages-widget-list-item('FAQ')
+                  +pages-widget-list-item('About')
+              +pages-widget-item
+                +pages-widget-button('Pages')
+                +pages-widget-list
+                  +pages-widget-list-item('Service')
+                  +pages-widget-list-item('FAQ')
+                  +pages-widget-list-item('About')
+              +pages-widget-item
+                +pages-widget-button('Portfolio')
+                +pages-widget-list
+                  +pages-widget-list-item('Service')
+                  +pages-widget-list-item('FAQ')
+                  +pages-widget-list-item('About')
+              +pages-widget-item
+                +pages-widget-button('Blog')
+                +pages-widget-list
+                  +pages-widget-list-item('Service')
+                  +pages-widget-list-item('FAQ')
+                  +pages-widget-list-item('About')
+              +pages-widget-item
+                +pages-widget-button('Shop')
+                +pages-widget-list
+                  +pages-widget-list-item('Service')
+                  +pages-widget-list-item('FAQ')
+                  +pages-widget-list-item('About')
 
-        .footer__widget
-          .page-footer__title
-            +title('twitter widget')
-          .page-footer__twitter-widget
-            +twitter-widget
-              +twitter-widget-item
-                +twitter-widget-body
-                +twitter-widget-footer
-              +twitter-widget-item
-                +twitter-widget-body
-                +twitter-widget-footer
-              +twitter-widget-item
-                +twitter-widget-body
-                +twitter-widget-footer
+          .footer__widget
+            .page-footer__title
+              +title('twitter widget')
+            .page-footer__twitter-widget
+              +twitter-widget
+                +twitter-widget-item
+                  +twitter-widget-body
+                  +twitter-widget-footer
+                +twitter-widget-item
+                  +twitter-widget-body
+                  +twitter-widget-footer
+                +twitter-widget-item
+                  +twitter-widget-body
+                  +twitter-widget-footer
 
-          .page-footer__title.page-footer__title_margin_sm
-            +title('social widget')
-          +color-socials
+            .page-footer__title.page-footer__title_margin_sm
+              +title('social widget')
+            +color-socials
 
-        .footer__widget
-          .page-footer__title
-            +title('flickr widget')
-          +flickr-widget
+          .footer__widget
+            .page-footer__title
+              +title('flickr widget')
+            +flickr-widget
 
-        .footer__widget
-          .page-footer__title
-            +title('news letter')
-          +subscribe-form({ name: 'news letter' }, 'theme_dark')
-            +subscribe-form-text-field({ name: 'my_name', placeholder: 'Name' })
-            +subscribe-form-text-field({ name: 'my_email', placeholder: 'Email' })
-            +subscribe-form-message-field
-            +btn('subscribe', 'type_rect, theme_dark')(href='#')
+          .footer__widget
+            .page-footer__title
+              +title('news letter')
+            +subscribe-form({ name: 'news letter' }, 'theme_dark')
+              +subscribe-form-text-field({ name: 'my_name', placeholder: 'Name' })
+              +subscribe-form-text-field({ name: 'my_email', placeholder: 'Email' })
+              +subscribe-form-message-field
+              +btn('subscribe', 'type_rect, theme_dark')(href='#')
+
+        .page-footer__inner-mob
+          +header-socials
+          +copyright
 
       +block-bottom
         .block-bottom__footer-nav
