@@ -113,6 +113,17 @@
     }
   }
 
+  &_type_footer {
+    padding: 12px 22px 8px;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 10px;
+    color: rgba(255, 255, 255, .7);
+    background-color: #303030;
+    border-radius: 15px;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+  }
+
   &_theme_blue {
     background-color: $color-button;
     transition: background-color .3s;
