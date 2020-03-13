@@ -8,7 +8,8 @@
   background-color: #212121;
 
   @include for-small-phone-only {
-    display: none;
+    padding: 38px 20px;
+    background-color: #303030;
   }
 
   &__inner {
@@ -19,6 +20,18 @@
     grid-column-gap: pxToRem(30);
     grid-row-gap: pxToRem(60);
     justify-items: center;
+
+    @include for-small-phone-only {
+      display: none;
+    }
+  }
+
+  &__inner-mob {
+    display: none;
+
+    @include for-small-phone-only {
+      display: block;
+    }
   }
 
   &__title {
