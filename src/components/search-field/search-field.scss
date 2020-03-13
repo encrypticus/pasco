@@ -5,6 +5,9 @@
   position: relative;
   max-width: 270px;
 
+  &_theme_dark {
+    max-width: 220px;
+  }
 
   &__input {
     width: 100%;
@@ -19,6 +22,14 @@
     opacity: .38;
     box-sizing: border-box;
     letter-spacing: .64px;
+  }
+
+  &_theme_dark &__input {
+    padding: 3px 35px 3px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: transparent;
+    border-color: rgba(#fff, .5);
   }
 
   &__btn {
@@ -43,11 +54,25 @@
     }
   }
 
+  &_theme_dark &__btn {
+    top: 7px;
+    right: 23px;
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+  }
+
   &__icon {
     font-family: 'Material Icons', Arial, sans-serif;
     font-size: 24px;
     font-weight: 400;
     color: #fff;
     letter-spacing: 1.2px;
+  }
+
+  &_theme_dark &__icon {
+    font-size: 18px;
+    letter-spacing: .5px;
+    color: rgba(#fff, .5);
   }
 }
