@@ -7,6 +7,10 @@
   padding: pxToRem(50) pxToRem(20) pxToRem(77);
   background-color: #212121;
 
+  @include for-small-phone-only {
+    display: none;
+  }
+
   &__inner {
     display: grid;
     max-width: 1170px;

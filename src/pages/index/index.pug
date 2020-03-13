@@ -177,8 +177,10 @@ block content
         section.block-right
           .main-page__search-field
             +search-field
-          .main-page__title
+          .main-page__title.main-page__title_will-be-hidden
             +title('categories', 'color_blue,bordered')
+          .main-page__title.main-page__title_will-be-shown
+            +title('categories')
           .main-page__sidebar-menu
             +sidebar-menu
               +sidebar-menu-list
@@ -188,7 +190,7 @@ block content
                 +sidebar-menu-item({ text: 'Web design', count: 220 })
                 +sidebar-menu-item({ text: 'Videography', count: 17 })
 
-          .main-page__title
+          .main-page__title.main-page__title_will-be-hidden
             +title('subscribe', 'color_blue,bordered')
           .main-page__subscribe-form
             +subscribe-form
@@ -231,12 +233,15 @@ block content
                 +tab-post-widget-item
                   +tab-post({ text, img: '../../components/tab-post/img/tab-post4.jpg' })
 
-          .main-page__tags-title
+          .main-page__tags-title.main-page__title_will-be-hidden
             +title('tags', 'color_blue,bordered')
+          .main-page__tags-title.main-page__title_will-be-shown
+            +title('tags')
           .main-page__tags
             +tags
 
-      +image-gallery
+      .main-page__image-gallery
+        +image-gallery
       +block-subscribe
         .block-subscribe__inner
           +big-title('Subscribe to our newsletter', 'size_sm')

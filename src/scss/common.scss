@@ -72,5 +72,10 @@ body {
       grid-template-columns: 1fr;
       padding-right: 20px;
     }
+
+    @include for-small-phone-only {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }

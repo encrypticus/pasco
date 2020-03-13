@@ -7,6 +7,10 @@
   padding: pxToRem(22) 20px;
   background-color: #303030;
 
+  @include for-small-phone-only {
+    display: none;
+  }
+
   &__inner {
     display: flex;
     margin: auto;

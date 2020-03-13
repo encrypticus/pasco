@@ -7,6 +7,11 @@
     width: 250px;
   }
 
+  @include for-small-phone-only {
+    max-width: none;
+    width: auto;
+  }
+
   $block-name: &; // #{$block-name}__element
 
   &__list {
@@ -28,6 +33,10 @@
     justify-content: space-between;
     letter-spacing: .56px;
     text-decoration: none;
+
+    @include for-small-phone-only {
+      color: rgba(#fff, .7);
+    }
   }
 
   &__count {

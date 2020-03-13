@@ -40,12 +40,36 @@
     }
   }
 
+  &__title {
+    @include for-small-phone-only {
+      max-width: unset;
+    }
+
+    &_will-be-hidden {
+      @include for-small-phone-only {
+        display: none;
+      }
+    }
+
+    &_will-be-shown {
+      display: none;
+
+      @include for-small-phone-only {
+        display: block;
+      }
+    }
+  }
+
   &__search-field {
     margin-bottom: 30px;
 
     @include for-phone-landscape-down {
       margin-left: auto;
       margin-right: auto;
+    }
+
+    @include for-small-phone-only {
+      display: none;
     }
   }
 
@@ -57,6 +81,10 @@
       margin-right: auto;
       min-width: 270px;
     }
+
+    @include for-small-phone-only {
+      min-width: unset;
+    }
   }
 
   &__subscribe-form {
@@ -67,6 +95,10 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    @include for-small-phone-only {
+      display: none;
+    }
   }
 
   &__post-group {
@@ -75,7 +107,6 @@
     grid-gap: 20px;
 
     &_lg {
-      //grid-template-columns: repeat(2, 1fr);
       grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
     }
   }
@@ -97,16 +128,28 @@
       margin-left: auto;
       min-width: 270px;
     }
+
+    @include for-small-phone-only {
+      display: none;
+    }
   }
 
   &__tab-post-widget {
     margin-bottom: 50px;
+
+    @include for-small-phone-only {
+      display: none;
+    }
   }
 
   &__btn-more {
     justify-self: right;
     margin-top: 20px;
     margin-bottom: 43px;
+
+    @include for-small-phone-only {
+      display: none;
+    }
   }
 
   &__tags {
@@ -122,6 +165,12 @@
       margin-right: auto;
     }
   }
+
+  &__image-gallery {
+    @include for-phone-only {
+      display: none;
+    }
+  }
 }
 
 .block-left {
@@ -129,6 +178,12 @@
   grid-template-columns: 1fr;
   grid-gap: 20px;
   background-color: #f5f5f5;
+
+  @include for-small-phone-only {
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .block-right {
@@ -152,5 +207,12 @@
     padding-right: 0;
     flex-direction: column;
     justify-content: center;
+  }
+
+  @include for-small-phone-only {
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #212121;
   }
 }
