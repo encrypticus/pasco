@@ -148,6 +148,8 @@
 
   @include for-phone-landscape-down {
     display: flex;
+    padding-left: 0;
+    padding-right: 0;
     flex-direction: column;
     justify-content: center;
   }
