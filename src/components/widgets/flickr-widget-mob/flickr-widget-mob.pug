@@ -1,0 +1,16 @@
+mixin flickr-widget-mob(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' flickr-widget-mob_' + modsList[i].trim();
+      }
+    }
+
+  include images.data.pug
+
+  .flickr-widget-mob(class=allMods)&attributes(attributes)
+    each image in images
+      img.flickr-widget-mob__img(src= image.src, alt= image.alt)
