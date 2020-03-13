@@ -1,0 +1,40 @@
+@import '../../scss/utils';
+
+.block-bottom {
+
+  $block-name: &; // #{$block-name}__element
+
+  padding: pxToRem(22) 20px;
+  background-color: #303030;
+
+  &__inner {
+    display: flex;
+    margin: auto;
+    max-width: 1170px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include for-laptop-down {
+      flex-direction: column;
+    }
+  }
+
+  &__footer-nav {
+    @include for-laptop-down {
+      margin-bottom: pxToRem(40);
+    }
+  }
+
+  &__search-field {
+    margin-left: pxToPercent(95, 1170);
+
+    @include for-desktop-down {
+      margin-left: 0;
+    }
+
+    @include for-laptop-down {
+      margin-bottom: pxToRem(40);
+    }
+  }
+}

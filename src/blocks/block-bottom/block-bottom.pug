@@ -1,0 +1,15 @@
+mixin block-bottom(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' block-bottom_' + modsList[i].trim();
+      }
+    }
+
+  section.block-bottom(class=allMods)&attributes(attributes)
+    .block-bottom__inner
+      block
+    
