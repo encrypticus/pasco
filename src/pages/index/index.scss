@@ -218,6 +218,16 @@
 
   &__logo {
     display: none;
+    margin-bottom: 15px;
+
+    @include for-small-phone-only {
+      display: block;
+    }
+  }
+
+  &__read-more {
+    display: none;
+    margin-bottom: 50px;
 
     @include for-small-phone-only {
       display: block;

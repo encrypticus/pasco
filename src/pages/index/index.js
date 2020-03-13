@@ -48,3 +48,4 @@ import '../../components/widgets/twitter-widget/twitter-widget';
 import '../../components/widgets/flickr-widget/flickr-widget';
 import '../../components/footer-nav/footer-nav';
 import '../../blocks/block-bottom/block-bottom';
+import '../../components/block-right-text/block-right-text';
