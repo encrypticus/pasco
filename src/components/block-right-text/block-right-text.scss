@@ -1,0 +1,19 @@
+@import '../../scss/utils';
+
+.block-right-text {
+
+  $block-name: &; // #{$block-name}__element
+
+  display: none;
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(#fff, .5);
+  letter-spacing: .56px;
+
+  @include for-small-phone-only {
+    display: block;
+  }
+}

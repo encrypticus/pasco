@@ -1,0 +1,14 @@
+mixin block-right-text(mods)
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' block-right-text_' + modsList[i].trim();
+      }
+    }
+
+  p.block-right-text(class=allMods)&attributes(attributes)
+    include ./text.txt
+    
