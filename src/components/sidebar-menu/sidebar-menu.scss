@@ -19,7 +19,15 @@
   }
 
   &__item {
+    border-bottom: 1px solid rgba(#372f2b, .1);
 
+    @include for-small-phone-only {
+      border-bottom-color: rgba(#fff, .12);
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
   }
 
   &__link {
