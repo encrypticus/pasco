@@ -30,18 +30,20 @@
     letter-spacing: .56px;
     transition: background-color .3s;
 
-    @include for-small-phone-only {
-      color: rgba(#fff, .7);
-      background-color: transparent;
-      border: 1px solid rgba(#fff, .7);
-    }
-
     &:hover {
       background-color: darken(#eee, 5);
     }
 
     &:focus {
       background-color: darken(#eee, 10);
+    }
+  }
+
+  &_theme_dark &__link {
+    @include for-small-phone-only {
+      color: rgba(#fff, .7);
+      background-color: transparent;
+      border: 1px solid rgba(#fff, .7);
     }
   }
 }
