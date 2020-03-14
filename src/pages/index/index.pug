@@ -187,7 +187,7 @@ block content
           .main-page__title.main-page__title_will-be-shown
             +title('categories')
           .main-page__sidebar-menu
-            +sidebar-menu
+            +sidebar-menu('theme_dark')
               +sidebar-menu-list
                 +sidebar-menu-item({ text: 'Photography', count: 165 })
                 +sidebar-menu-item({ text: 'Illustration', count: 15 })
@@ -243,7 +243,7 @@ block content
           .main-page__tags-title.main-page__title_will-be-shown
             +title('tags')
           .main-page__tags
-            +tags
+            +tags('theme_dark')
           .main-page__tags-title.main-page__title_will-be-shown
             +title('flickr')
           +flickr-widget-mob
